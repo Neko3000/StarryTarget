@@ -35,15 +35,29 @@ class AssigmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSour
         return cell.frame.size.height
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.dequeueReusableCell(withIdentifier: "SingleAssignmentTableViewCell") as! SingleAssignmentTableViewCell
         cell.Title.text = "There is title"
         cell.Time.text = "There is time"
         
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1;
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3;
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let tempView = UIView()
+        tempView.backgroundColor = UIColor.clear
+        return tempView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 12
     }
 }

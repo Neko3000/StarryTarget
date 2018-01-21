@@ -24,30 +24,44 @@
                 <rect key="frame" x="0.0" y="0.0" width="321" height="89.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-Pf-NBO">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-Pf-NBO">
                         <rect key="frame" x="15" y="15" width="40" height="40"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assignment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uv8-gt-cKF">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uv8-gt-cKF">
                         <rect key="frame" x="73" y="15" width="112" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CW7-Hf-LAl"/>
+                            <constraint firstAttribute="width" constant="112" id="d9U-uW-1hB"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                         <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8:00.AM - 19:20.PM " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egp-Ky-mek">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00.AM - 19:20.PM " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egp-Ky-mek">
                         <rect key="frame" x="73" y="38" width="123" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DQE-v1-2sb"/>
+                            <constraint firstAttribute="width" constant="123" id="fVc-XA-Hg4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
                         <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-yZ-tcH">
-                        <rect key="frame" x="294" y="65" width="13" height="13"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-yZ-tcH">
+                        <rect key="frame" x="296" y="65" width="13" height="13"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.38994683159722221" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="3Ym-Pf-NBO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="6Sb-Ka-py3"/>
+                    <constraint firstItem="Uv8-gt-cKF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Hfj-dE-xw7"/>
+                    <constraint firstItem="Uv8-gt-cKF" firstAttribute="leading" secondItem="3Ym-Pf-NBO" secondAttribute="trailing" constant="18" id="Q3s-cS-6DG"/>
+                    <constraint firstAttribute="trailing" secondItem="0Bf-yZ-tcH" secondAttribute="trailing" constant="12" id="e6v-fP-qBn"/>
+                    <constraint firstItem="3Ym-Pf-NBO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jx8-gF-hYn"/>
+                    <constraint firstItem="egp-Ky-mek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="kPr-rI-AQf"/>
+                    <constraint firstAttribute="bottom" secondItem="0Bf-yZ-tcH" secondAttribute="bottom" constant="12" id="qZD-3S-LYq"/>
+                    <constraint firstItem="egp-Ky-mek" firstAttribute="leading" secondItem="3Ym-Pf-NBO" secondAttribute="trailing" constant="18" id="qeG-Lo-dNh"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

@@ -16,6 +16,11 @@ class SingleAssignmentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+        //corner-radius
+        layer.cornerRadius = 8
+        layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
