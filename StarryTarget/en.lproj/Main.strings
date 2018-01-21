@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "AM."; ObjectID = "WJP-lW-ybT"; */
+"WJP-lW-ybT.text" = "AM.";
+
+/* Class = "UILabel"; text = "09:00"; ObjectID = "aPb-Pc-evA"; */
+"aPb-Pc-evA.text" = "09:00";
+
+/* Class = "UITextField"; placeholder = "Describes what you gonna do"; ObjectID = "cPE-6R-ovq"; */
+"cPE-6R-ovq.placeholder" = "Describes what you gonna do";
+
+/* Class = "UITextField"; placeholder = "Action's title"; ObjectID = "eFQ-sf-nBK"; */
+"eFQ-sf-nBK.placeholder" = "Action's title";
+
+/* Class = "UILabel"; text = "18:00"; ObjectID = "eMR-Ry-UKV"; */
+"eMR-Ry-UKV.text" = "18:00";
+
+/* Class = "UIButton"; normalTitle = "Focus"; ObjectID = "hXn-Pz-xC9"; */
+"hXn-Pz-xC9.normalTitle" = "Focus";
+
+/* Class = "UILabel"; text = "= 9 hours"; ObjectID = "x2t-La-dTB"; */
+"x2t-La-dTB.text" = "= 9 hours";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "x30-zY-hDc"; */
+"x30-zY-hDc.text" = "~";
+
+/* Class = "UILabel"; text = "PM."; ObjectID = "xde-1X-Yru"; */
+"xde-1X-Yru.text" = "PM.";

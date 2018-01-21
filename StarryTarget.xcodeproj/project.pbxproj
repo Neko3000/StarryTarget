@@ -10,10 +10,12 @@
 		EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */; };
 		EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */; };
 		EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6DE2010524E006AAEA1 /* MainViewController.swift */; };
+		EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */; };
 		EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F0684200C8F3A0035A274 /* AppDelegate.swift */; };
 		EB7F068A200C8F3A0035A274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F0688200C8F3A0035A274 /* Main.storyboard */; };
 		EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068B200C8F3A0035A274 /* Assets.xcassets */; };
 		EB7F068F200C8F3A0035A274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */; };
+		EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */; };
 		EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */; };
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -22,12 +24,14 @@
 		EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
 		EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentListTableView.swift; sourceTree = "<group>"; };
 		EB26C6DE2010524E006AAEA1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentProcessViewController.swift; sourceTree = "<group>"; };
 		EB7F0681200C8F390035A274 /* StarryTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarryTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7F0684200C8F3A0035A274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB7F0689200C8F3A0035A274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB7F068B200C8F3A0035A274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7F068E200C8F3A0035A274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7F0690200C8F3A0035A274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentCreateViewController.swift; sourceTree = "<group>"; };
 		EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				EB26C6DE2010524E006AAEA1 /* MainViewController.swift */,
+				EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */,
+				EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */,
 				EB26C6CD201025FF006AAEA1 /* ViewModels */,
 				EB7F0684200C8F3A0035A274 /* AppDelegate.swift */,
 				EB7F0688200C8F3A0035A274 /* Main.storyboard */,
@@ -158,10 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */,
+				EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */,
 				EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */,
 				EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */,
 				EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */,
 				EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */,
+				EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
