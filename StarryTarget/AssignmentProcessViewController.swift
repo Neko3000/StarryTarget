@@ -9,11 +9,19 @@
 import UIKit
 
 class AssignmentProcessViewController: UIViewController {
-
+    
+    //Components
+    @IBOutlet weak var AnimationImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Load animation images into AnimationImageView
+        AnimationImageView.image = UIImage.animatedImageNamed("person-working/person-working_", duration: 10)
+        AnimationImageView.contentMode = .scaleAspectFill
+        AnimationImageView.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {

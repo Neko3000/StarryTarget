@@ -16,6 +16,7 @@
 		EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068B200C8F3A0035A274 /* Assets.xcassets */; };
 		EB7F068F200C8F3A0035A274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */; };
 		EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */; };
+		EBCA13442015B9F4007A91DE /* person-working in Resources */ = {isa = PBXBuildFile; fileRef = EBCA13432015B9F3007A91DE /* person-working */; };
 		EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */; };
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		EB7F068E200C8F3A0035A274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7F0690200C8F3A0035A274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentCreateViewController.swift; sourceTree = "<group>"; };
+		EBCA13432015B9F3007A91DE /* person-working */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "person-working"; sourceTree = "<group>"; };
 		EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,8 +88,17 @@
 				EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */,
 				EB7F0690200C8F3A0035A274 /* Info.plist */,
 				EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */,
+				EBCA13452015B9FA007A91DE /* Resource */,
 			);
 			path = StarryTarget;
+			sourceTree = "<group>";
+		};
+		EBCA13452015B9FA007A91DE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EBCA13432015B9F3007A91DE /* person-working */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */,
+				EBCA13442015B9F4007A91DE /* person-working in Resources */,
 				EB7F068F200C8F3A0035A274 /* LaunchScreen.storyboard in Resources */,
 				EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */,
 				EB7F068A200C8F3A0035A274 /* Main.storyboard in Resources */,
