@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QAl-wV-zoI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XU2-Gf-9Gg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,6 +13,7 @@
         <array key="Helvetica.ttc">
             <string>Helvetica</string>
             <string>Helvetica-Light</string>
+            <string>Helvetica-LightOblique</string>
         </array>
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
@@ -142,6 +143,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="kkI-HL-lv9"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
                                         <state key="normal" title="Focus">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -333,6 +335,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6Y-Sa-IJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1792.8" y="115.59220389805098"/>
+        </scene>
+        <!--Assignment Achieve View Controller-->
+        <scene sceneID="KZm-W4-zqO">
+            <objects>
+                <viewController id="XU2-Gf-9Gg" customClass="AssignmentAchieveViewController" customModule="StarryTarget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGe-xj-agr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-Background" translatesAutoresizingMaskIntoConstraints="NO" id="a4Z-9d-vgl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iMi-ae-g2v">
+                                <rect key="frame" x="0.0" y="20" width="375" height="266"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="D0r-9y-1Xk"/>
+                                    <constraint firstAttribute="width" constant="375" id="U22-Hp-sGI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have overcame all those difficulties to achieve your target." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zET-hx-R3K">
+                                <rect key="frame" x="38" y="308" width="299" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="oSH-Sn-VSy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;If you want a happy ending, that depends, of course, on where you stop your story.&quot; " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDT-Y1-pob">
+                                <rect key="frame" x="38" y="409" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Orson Welles " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa3-0z-0AL">
+                                <rect key="frame" x="248" y="450" width="89" height="15"/>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-Qw-zQO">
+                                <rect key="frame" x="38" y="589" width="299" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hiu-gL-OvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" red="0.21568627450980393" green="0.066666666666666666" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a4Z-9d-vgl" firstAttribute="trailing" secondItem="Qta-W8-wdR" secondAttribute="trailing" id="1oM-Ln-ecI"/>
+                            <constraint firstItem="oa3-0z-0AL" firstAttribute="top" secondItem="BDT-Y1-pob" secondAttribute="bottom" constant="11" id="2pQ-Sa-8oA"/>
+                            <constraint firstItem="a4Z-9d-vgl" firstAttribute="bottom" secondItem="Qta-W8-wdR" secondAttribute="bottom" id="9Ey-JN-AsL"/>
+                            <constraint firstItem="zET-hx-R3K" firstAttribute="top" secondItem="iMi-ae-g2v" secondAttribute="bottom" constant="22" id="9mv-06-a6r"/>
+                            <constraint firstItem="a4Z-9d-vgl" firstAttribute="leading" secondItem="Qta-W8-wdR" secondAttribute="leading" id="BaB-wg-H6w"/>
+                            <constraint firstItem="Pe0-Qw-zQO" firstAttribute="top" secondItem="oa3-0z-0AL" secondAttribute="bottom" constant="124" id="C5S-zS-95J"/>
+                            <constraint firstItem="Qta-W8-wdR" firstAttribute="trailing" secondItem="oa3-0z-0AL" secondAttribute="trailing" constant="38" id="ClB-Vw-QEB"/>
+                            <constraint firstItem="Qta-W8-wdR" firstAttribute="trailing" secondItem="Pe0-Qw-zQO" secondAttribute="trailing" constant="38" id="HCW-8D-CuI"/>
+                            <constraint firstItem="zET-hx-R3K" firstAttribute="centerX" secondItem="a4Z-9d-vgl" secondAttribute="centerX" id="JVU-iu-MBb"/>
+                            <constraint firstItem="Qta-W8-wdR" firstAttribute="trailing" secondItem="zET-hx-R3K" secondAttribute="trailing" constant="38" id="Pfi-hg-BPY"/>
+                            <constraint firstItem="iMi-ae-g2v" firstAttribute="centerX" secondItem="a4Z-9d-vgl" secondAttribute="centerX" id="S7g-ad-QOi"/>
+                            <constraint firstItem="BDT-Y1-pob" firstAttribute="leading" secondItem="Qta-W8-wdR" secondAttribute="leading" constant="38" id="T71-h9-4aA"/>
+                            <constraint firstItem="a4Z-9d-vgl" firstAttribute="top" secondItem="xGe-xj-agr" secondAttribute="top" id="VCy-Gg-rDw"/>
+                            <constraint firstItem="iMi-ae-g2v" firstAttribute="top" secondItem="Qta-W8-wdR" secondAttribute="top" id="eJT-A6-5yZ"/>
+                            <constraint firstItem="zET-hx-R3K" firstAttribute="leading" secondItem="Qta-W8-wdR" secondAttribute="leading" constant="38" id="fQ1-Mq-bwQ"/>
+                            <constraint firstItem="Pe0-Qw-zQO" firstAttribute="leading" secondItem="Qta-W8-wdR" secondAttribute="leading" constant="38" id="iks-ve-u7j"/>
+                            <constraint firstItem="Qta-W8-wdR" firstAttribute="bottom" secondItem="Pe0-Qw-zQO" secondAttribute="bottom" constant="42" id="mVO-JR-dE6"/>
+                            <constraint firstItem="Qta-W8-wdR" firstAttribute="trailing" secondItem="BDT-Y1-pob" secondAttribute="trailing" constant="38" id="xWS-LF-kB7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qta-W8-wdR"/>
+                    </view>
+                    <connections>
+                        <outlet property="AnimationImageView" destination="iMi-ae-g2v" id="2j7-KZ-Djk"/>
+                        <outlet property="QuoteAuthorLabel" destination="oa3-0z-0AL" id="Wpw-tk-YjT"/>
+                        <outlet property="QuoteContentLabel" destination="BDT-Y1-pob" id="tuu-ZP-Ly0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KP5-iH-oeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2613.5999999999999" y="115.59220389805098"/>
         </scene>
     </scenes>
     <resources>

@@ -17,6 +17,8 @@
 		EB7F068F200C8F3A0035A274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */; };
 		EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */; };
 		EBCA13442015B9F4007A91DE /* person-working in Resources */ = {isa = PBXBuildFile; fileRef = EBCA13432015B9F3007A91DE /* person-working */; };
+		EBCA13472015BFDB007A91DE /* AssignmentAchieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */; };
+		EBCA13492015CA24007A91DE /* moon-cloud in Resources */ = {isa = PBXBuildFile; fileRef = EBCA13482015CA24007A91DE /* moon-cloud */; };
 		EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */; };
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		EB7F0690200C8F3A0035A274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentCreateViewController.swift; sourceTree = "<group>"; };
 		EBCA13432015B9F3007A91DE /* person-working */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "person-working"; sourceTree = "<group>"; };
+		EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAchieveViewController.swift; sourceTree = "<group>"; };
+		EBCA13482015CA24007A91DE /* moon-cloud */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "moon-cloud"; sourceTree = "<group>"; };
 		EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,7 @@
 				EB26C6DE2010524E006AAEA1 /* MainViewController.swift */,
 				EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */,
 				EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */,
+				EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */,
 				EB26C6CD201025FF006AAEA1 /* ViewModels */,
 				EB7F0684200C8F3A0035A274 /* AppDelegate.swift */,
 				EB7F0688200C8F3A0035A274 /* Main.storyboard */,
@@ -96,6 +101,7 @@
 		EBCA13452015B9FA007A91DE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				EBCA13482015CA24007A91DE /* moon-cloud */,
 				EBCA13432015B9F3007A91DE /* person-working */,
 			);
 			path = Resource;
@@ -163,6 +169,7 @@
 				EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */,
 				EBCA13442015B9F4007A91DE /* person-working in Resources */,
 				EB7F068F200C8F3A0035A274 /* LaunchScreen.storyboard in Resources */,
+				EBCA13492015CA24007A91DE /* moon-cloud in Resources */,
 				EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */,
 				EB7F068A200C8F3A0035A274 /* Main.storyboard in Resources */,
 			);
@@ -180,6 +187,7 @@
 				EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */,
 				EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */,
 				EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */,
+				EBCA13472015BFDB007A91DE /* AssignmentAchieveViewController.swift in Sources */,
 				EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */,
 				EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */,
 			);
