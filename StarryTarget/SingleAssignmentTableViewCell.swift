@@ -10,8 +10,8 @@ import UIKit
 
 class SingleAssignmentTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var Title: UILabel!
-    @IBOutlet weak var Time: UILabel!
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var TimeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

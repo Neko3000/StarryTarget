@@ -65,8 +65,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="Time" destination="egp-Ky-mek" id="Ong-CR-PHL"/>
-                <outlet property="Title" destination="Uv8-gt-cKF" id="rAn-Gn-qJf"/>
+                <outlet property="TimeLabel" destination="egp-Ky-mek" id="swu-KD-xIF"/>
+                <outlet property="TitleLabel" destination="Uv8-gt-cKF" id="rAg-T2-9B8"/>
             </connections>
             <point key="canvasLocation" x="25.5" y="75"/>
         </tableViewCell>

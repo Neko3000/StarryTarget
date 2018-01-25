@@ -3,12 +3,29 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MainViewController.viewWillAppear(_:):MainViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "AssignmentProcessViewController.viewDidLoad():AssignmentProcessViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "AnimationImageView.image">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewController.viewDidLoad():MainViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AssigmentListTableView.tableView(_:cellForRowAt:):AssigmentListTableView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddBtnTableViewCell.AddBtnTouchUpInside(_:):AddBtnTableViewCell.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

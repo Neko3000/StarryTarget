@@ -19,6 +19,8 @@
 		EBCA13442015B9F4007A91DE /* person-working in Resources */ = {isa = PBXBuildFile; fileRef = EBCA13432015B9F3007A91DE /* person-working */; };
 		EBCA13472015BFDB007A91DE /* AssignmentAchieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */; };
 		EBCA13492015CA24007A91DE /* moon-cloud in Resources */ = {isa = PBXBuildFile; fileRef = EBCA13482015CA24007A91DE /* moon-cloud */; };
+		EBCA134C2015CD5C007A91DE /* AddBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA134A2015CD5C007A91DE /* AddBtnTableViewCell.swift */; };
+		EBCA134D2015CD5C007A91DE /* AddBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */; };
 		EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */; };
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		EBCA13432015B9F3007A91DE /* person-working */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "person-working"; sourceTree = "<group>"; };
 		EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAchieveViewController.swift; sourceTree = "<group>"; };
 		EBCA13482015CA24007A91DE /* moon-cloud */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "moon-cloud"; sourceTree = "<group>"; };
+		EBCA134A2015CD5C007A91DE /* AddBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBtnTableViewCell.swift; sourceTree = "<group>"; };
+		EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBtnTableViewCell.xib; sourceTree = "<group>"; };
 		EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,8 @@
 				EB26C6CD201025FF006AAEA1 /* ViewModels */,
 				EB7F0684200C8F3A0035A274 /* AppDelegate.swift */,
 				EB7F0688200C8F3A0035A274 /* Main.storyboard */,
+				EBCA134A2015CD5C007A91DE /* AddBtnTableViewCell.swift */,
+				EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */,
 				EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */,
 				EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */,
 				EB7F068B200C8F3A0035A274 /* Assets.xcassets */,
@@ -172,6 +178,7 @@
 				EBCA13492015CA24007A91DE /* moon-cloud in Resources */,
 				EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */,
 				EB7F068A200C8F3A0035A274 /* Main.storyboard in Resources */,
+				EBCA134D2015CD5C007A91DE /* AddBtnTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */,
+				EBCA134C2015CD5C007A91DE /* AddBtnTableViewCell.swift in Sources */,
 				EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */,
 				EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */,
 				EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */,
