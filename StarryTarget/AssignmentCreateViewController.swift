@@ -10,10 +10,22 @@ import UIKit
 
 class AssignmentCreateViewController: UIViewController {
 
+    
+    @IBOutlet weak var EndTimeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tapBehavior = UITapGestureRecognizer(target: self, action:#selector(self.showDatePicker))
+        EndTimeLabel.isUserInteractionEnabled = true
+        EndTimeLabel.addGestureRecognizer(tapBehavior)
+    }
+    
+    @objc func showDatePicker(sender:UITapGestureRecognizer)
+    {
+        print("do it")
     }
 
     override func didReceiveMemoryWarning() {
