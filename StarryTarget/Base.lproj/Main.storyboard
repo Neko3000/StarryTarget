@@ -238,7 +238,7 @@
                                     <constraint firstItem="bII-3A-F8i" firstAttribute="top" secondItem="Aza-S9-eca" secondAttribute="top" id="lKG-Vo-5YR"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="PickerView" destination="Oib-5E-BW7" id="w4Q-SJ-8av"/>
+                                    <outlet property="PickerView" destination="Oib-5E-BW7" id="qU9-QZ-Fcp"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -259,7 +259,9 @@
                         <viewLayoutGuide key="safeArea" id="8fO-V3-xqr"/>
                     </view>
                     <connections>
+                        <outlet property="EndPeriodLabel" destination="xde-1X-Yru" id="7Xx-MW-ngp"/>
                         <outlet property="EndTimeLabel" destination="eMR-Ry-UKV" id="28n-1o-5rW"/>
+                        <outlet property="MainTimePickerView" destination="Aza-S9-eca" id="lYf-cs-2zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHH-gz-1sl" userLabel="First Responder" sceneMemberID="firstResponder"/>

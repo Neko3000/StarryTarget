@@ -13,6 +13,7 @@
 		EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6DE2010524E006AAEA1 /* MainViewController.swift */; };
 		EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */; };
 		EB706C8E201972F000BFB9DE /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB706C8D201972F000BFB9DE /* TimePickerView.swift */; };
+		EB7E6FFE201F1CA400338614 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7E6FFD201F1CA400338614 /* DateTime.swift */; };
 		EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F0684200C8F3A0035A274 /* AppDelegate.swift */; };
 		EB7F068A200C8F3A0035A274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F0688200C8F3A0035A274 /* Main.storyboard */; };
 		EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068B200C8F3A0035A274 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		EB26C6DE2010524E006AAEA1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentProcessViewController.swift; sourceTree = "<group>"; };
 		EB706C8D201972F000BFB9DE /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		EB7E6FFD201F1CA400338614 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		EB7F0681200C8F390035A274 /* StarryTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarryTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7F0684200C8F3A0035A274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB7F0689200C8F3A0035A274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				EB7F0690200C8F3A0035A274 /* Info.plist */,
 				EB706C8D201972F000BFB9DE /* TimePickerView.swift */,
 				EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */,
+				EB7E6FFD201F1CA400338614 /* DateTime.swift */,
 				EBCA13452015B9FA007A91DE /* Resource */,
 			);
 			path = StarryTarget;
@@ -285,6 +288,7 @@
 				EBCA13472015BFDB007A91DE /* AssignmentAchieveViewController.swift in Sources */,
 				EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */,
 				EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */,
+				EB7E6FFE201F1CA400338614 /* DateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

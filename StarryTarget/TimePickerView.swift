@@ -7,10 +7,32 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+
+struct Time {
+    init() {
+        hour = 0
+        minute = 0
+        second = 0
+    }
+    init(h:Int,m:Int,s:Int)
+    {
+        hour = h
+        minute = m
+        second = s
+    }
+    public var hour:Int?
+    public var minute:Int?
+    public var second:Int?
+}
 
 class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
 
     @IBOutlet weak var PickerView:UIPickerView!
+    
+    public var time:Variable<Time> = Variable<Time>(Time.init())
+    private var perviousTime:Time?
     
     var _hour:Int = 0
     var _minute:Int = 0
@@ -33,7 +55,6 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
     }
     
     
-    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -46,6 +67,7 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
         
         PickerView.delegate = self
         PickerView.dataSource = self
+        
     }
     
     @IBAction func CancelBtnTapped(_ sender:Any){
@@ -54,6 +76,10 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
     
     @IBAction func DoneBtnTapped(_ sender:Any)
     {
+        time.value.hour = PickerView.selectedRow(inComponent: 0)
+        time.value.minute = PickerView.selectedRow(inComponent: 1)
+        time.value.second = PickerView.selectedRow(inComponent: 2)
+        
         self.isHidden = true
     }
     
@@ -87,13 +113,14 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
         }
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         switch component {
         case 0:
-            _hour = row
+            time.value.hour = row
         case 1:
-            _minute = row
+            time.value.minute = row
         case 2:
-            _second = row
+            time.value.second = row
         default:
             break
         }
