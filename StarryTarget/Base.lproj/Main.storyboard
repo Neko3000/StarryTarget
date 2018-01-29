@@ -201,13 +201,17 @@
                                     <constraint firstItem="QmY-L9-d8d" firstAttribute="top" secondItem="zZk-Vi-tB5" secondAttribute="top" constant="25" id="uRY-mI-7cz"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-S9-eca" customClass="TimePickerView" customModule="StarryTarget" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="433" width="375" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-S9-eca" customClass="TimePickerView" customModule="StarryTarget" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="437" width="375" height="230"/>
                                 <subviews>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bII-3A-F8i">
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oib-5E-BW7">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="186"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="186" id="m5D-tu-59h"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bII-3A-F8i">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <items>
                                             <barButtonItem title="Cancel" id="hrK-lV-YPu">
                                                 <connections>
@@ -222,12 +226,17 @@
                                             </barButtonItem>
                                         </items>
                                     </toolbar>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oib-5E-BW7">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="190"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bII-3A-F8i" firstAttribute="leading" secondItem="Aza-S9-eca" secondAttribute="leading" id="0uS-zW-EJv"/>
+                                    <constraint firstItem="Oib-5E-BW7" firstAttribute="leading" secondItem="Aza-S9-eca" secondAttribute="leading" id="HqP-vs-ARs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oib-5E-BW7" secondAttribute="bottom" id="aEW-Lx-w8u"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oib-5E-BW7" secondAttribute="trailing" id="dRI-uz-tPL"/>
+                                    <constraint firstAttribute="height" constant="230" id="eg7-U6-8I4"/>
+                                    <constraint firstAttribute="trailing" secondItem="bII-3A-F8i" secondAttribute="trailing" id="fpy-8q-VOM"/>
+                                    <constraint firstItem="bII-3A-F8i" firstAttribute="top" secondItem="Aza-S9-eca" secondAttribute="top" id="lKG-Vo-5YR"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="PickerView" destination="Oib-5E-BW7" id="w4Q-SJ-8av"/>
                                 </connections>
@@ -235,13 +244,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8fO-V3-xqr" firstAttribute="bottom" secondItem="Aza-S9-eca" secondAttribute="bottom" id="4w7-ha-EDY"/>
                             <constraint firstItem="vct-Cm-GbU" firstAttribute="top" secondItem="Og7-sD-yiq" secondAttribute="top" id="BVa-q7-YbA"/>
                             <constraint firstItem="vct-Cm-GbU" firstAttribute="bottom" secondItem="8fO-V3-xqr" secondAttribute="bottom" id="JSa-Ef-Ges"/>
                             <constraint firstItem="zZk-Vi-tB5" firstAttribute="top" secondItem="Og7-sD-yiq" secondAttribute="top" constant="70" id="ODG-Pp-kdn"/>
                             <constraint firstItem="vct-Cm-GbU" firstAttribute="trailing" secondItem="8fO-V3-xqr" secondAttribute="trailing" id="Tof-9w-TaK"/>
                             <constraint firstAttribute="trailing" secondItem="zZk-Vi-tB5" secondAttribute="trailing" constant="27" id="aPs-7m-0I0"/>
+                            <constraint firstItem="Aza-S9-eca" firstAttribute="leading" secondItem="8fO-V3-xqr" secondAttribute="leading" id="dEF-b8-Wqi"/>
                             <constraint firstAttribute="bottom" secondItem="zZk-Vi-tB5" secondAttribute="bottom" constant="70" id="dbh-On-fzI"/>
                             <constraint firstItem="vct-Cm-GbU" firstAttribute="leading" secondItem="8fO-V3-xqr" secondAttribute="leading" id="gWd-0c-4IX"/>
+                            <constraint firstItem="8fO-V3-xqr" firstAttribute="trailing" secondItem="Aza-S9-eca" secondAttribute="trailing" id="lUZ-fA-a2d"/>
                             <constraint firstItem="zZk-Vi-tB5" firstAttribute="leading" secondItem="Og7-sD-yiq" secondAttribute="leading" constant="27" id="riA-s3-6Pc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8fO-V3-xqr"/>

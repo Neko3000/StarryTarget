@@ -12,9 +12,27 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
 
     @IBOutlet weak var PickerView:UIPickerView!
     
-    var hour:Int = 0
-    var minute:Int = 0
-    var second:Int = 0
+    var _hour:Int = 0
+    var _minute:Int = 0
+    var _second:Int = 0
+    
+    public var hour:Int{
+        get{
+            return _hour
+        }
+    }
+    public var minute:Int{
+        get{
+            return _minute
+        }
+    }
+    public var second:Int{
+        get{
+            return _second
+        }
+    }
+    
+    
     
     /*
     // Only override draw() if you perform custom drawing.
@@ -36,9 +54,7 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
     
     @IBAction func DoneBtnTapped(_ sender:Any)
     {
-        UIView.transition(with: self, duration: 2, options: .transitionFlipFromTop, animations: {
-            self.isHidden = true;
-            }, completion: nil)
+        self.isHidden = true
     }
     
     
@@ -73,11 +89,11 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch component {
         case 0:
-            hour = row
+            _hour = row
         case 1:
-            minute = row
+            _minute = row
         case 2:
-            second = row
+            _second = row
         default:
             break
         }
