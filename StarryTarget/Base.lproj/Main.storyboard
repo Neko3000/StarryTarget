@@ -151,6 +151,9 @@
                                         <state key="normal" title="Focus">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="QAl-wV-zoI" kind="show" identifier="ShowAssignmentProcessView" id="bVr-Id-6Pa"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xde-1X-Yru">
                                         <rect key="frame" x="239.5" y="249" width="31" height="22"/>
@@ -384,6 +387,9 @@
                     </view>
                     <connections>
                         <outlet property="AnimationImageView" destination="PZB-UX-AYF" id="LKo-40-nsT"/>
+                        <outlet property="HourLabel" destination="j1J-0a-UgL" id="VgP-V9-oRQ"/>
+                        <outlet property="MinuteLabel" destination="6xT-Z4-2Wp" id="VW3-gx-Vlw"/>
+                        <outlet property="SecondLabel" destination="gZF-qA-xHA" id="DNX-n0-gDz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6Y-Sa-IJH" userLabel="First Responder" sceneMemberID="firstResponder"/>

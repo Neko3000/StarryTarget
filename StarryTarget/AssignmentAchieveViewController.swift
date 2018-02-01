@@ -26,6 +26,8 @@ class AssignmentAchieveViewController: UIViewController {
         AnimationImageView.image = UIImage.animatedImageNamed("moon-cloud/moon-cloud_", duration: 5)
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,20 +10,54 @@ import UIKit
 
 class AssignmentProcessViewController: UIViewController {
     
+    @IBOutlet weak var HourLabel: UILabel!
+    @IBOutlet weak var MinuteLabel: UILabel!
+    @IBOutlet weak var SecondLabel: UILabel!
+    
     //Components
     @IBOutlet weak var AnimationImageView: UIImageView!
+    
+    public var timeSecond:Int?{
+        set(value){
+            _timeSecond = value
+        }
+        get{
+            return _timeSecond
+        }
+    }
+    
+    private var _timeSecond:Int? = 0
+    
+    private var timeSecondCounter:Int? = 0
+    
+    private var timer:Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        //Load animation images into AnimationImageView
+        //load animation images into AnimationImageView
         AnimationImageView.image = UIImage.animatedImageNamed("person-working/person-working_", duration: 10)
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
+        
+        //set timer
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 
+    @objc func updateTime(){
+        let hour:Int = _timeSecond! / 3600
+        let minute:Int = (_timeSecond! % 3600)/60
+        let second:Int = _timeSecond! % 60
+        
+        HourLabel.text = "\(hour)"
+        MinuteLabel.text = "\(minute)"
+        SecondLabel.text = "\(second)"
+        
+        timeSecond = timeSecond! - 1
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

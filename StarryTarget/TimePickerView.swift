@@ -31,12 +31,13 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
 
     @IBOutlet weak var PickerView:UIPickerView!
     
-    public var time:Variable<Time> = Variable<Time>(Time.init())
+    public var time:Variable<Time> = Variable<Time>(Time())
     private var perviousTime:Time?
     
-    var _hour:Int = 0
-    var _minute:Int = 0
-    var _second:Int = 0
+    //unused properties
+    private var _hour:Int = 0
+    private var _minute:Int = 0
+    private var _second:Int = 0
     
     public var hour:Int{
         get{

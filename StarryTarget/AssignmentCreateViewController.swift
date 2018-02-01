@@ -23,8 +23,8 @@ class AssignmentCreateViewController: UIViewController {
     
     private var timer:Timer?
     
-    private var StartTime:Variable<Date> = Variable<Date>(Date())
-    private var EndTime:Variable<Date> = Variable<Date>(Date())
+    private var currentTime:Variable<Date> = Variable<Date>(Date())
+    private var timeSecond:Variable<Int> = Variable<Int>(0)
     
     var disposeBag = DisposeBag()
     
@@ -39,38 +39,52 @@ class AssignmentCreateViewController: UIViewController {
         EndTimeLabel.addGestureRecognizer(tapBehavior)
         
         //observer UILabs
-        StartTime.asObservable().map({t -> String in
+        currentTime.asObservable().map({t -> String in
             let dateFormatterForPeriod = DateFormatter()
             dateFormatterForPeriod.dateFormat = "a"
             
             return dateFormatterForPeriod.string(from: t)
         }).bind(to:StartPeriodLabel.rx.text).disposed(by: self.disposeBag)
         
-        StartTime.asObservable().map({t -> String in
+        currentTime.asObservable().map({t -> String in
             let dateFormatterForTime = DateFormatter()
             dateFormatterForTime.dateFormat = "HH:mm"
             
             return dateFormatterForTime.string(from: t)
         }).bind(to:StartTimeLabel.rx.text).disposed(by: self.disposeBag)
         
-        MainTimePickerView.time.asObservable().map({t -> Date in
-            let targetTime = Date().addingTimeInterval(TimeInterval(t.hour!*60*60 + t.minute!*60 + t.second!))
+        currentTime.asObservable().map({t -> String in
+            let dateFormatterForPeriod = DateFormatter()
+            dateFormatterForPeriod.dateFormat = "a"
             
-            return targetTime
-        }).bind(to: EndTime).disposed(by: self.disposeBag)
+            return dateFormatterForPeriod.string(from: t.addingTimeInterval(TimeInterval(self.timeSecond.value)))
+        }).bind(to:EndPeriodLabel.rx.text).disposed(by: self.disposeBag)
         
-        EndTime.asObservable().map({t -> String in
+        currentTime.asObservable().map({t -> String in
+            let dateFormatterForTime = DateFormatter()
+            dateFormatterForTime.dateFormat = "HH:mm"
+            
+            return dateFormatterForTime.string(from: t.addingTimeInterval(TimeInterval(self.timeSecond.value)))
+        }).bind(to:EndTimeLabel.rx.text).disposed(by: self.disposeBag)
+        
+        MainTimePickerView.time.asObservable().map({t -> Int in
+            //let targetTime = Date().addingTimeInterval(TimeInterval(t.hour!*60*60 + t.minute!*60 + t.second!))
+            
+            return t.hour!*60*60 + t.minute!*60 + t.second!
+        }).bind(to: timeSecond).disposed(by: self.disposeBag)
+        
+        timeSecond.asObservable().map({t -> String in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "a"
             
-            return dateFormatter.string(from: self.EndTime.value)
+            return dateFormatter.string(from:Date().addingTimeInterval(TimeInterval(self.timeSecond.value)))
         }).bind(to: EndPeriodLabel.rx.text).disposed(by: self.disposeBag)
         
-        EndTime.asObservable().map({t -> String in
+        timeSecond.asObservable().map({t -> String in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "HH:mm"
             
-            return dateFormatter.string(from: self.EndTime.value)
+            return dateFormatter.string(from:Date().addingTimeInterval(TimeInterval(self.timeSecond.value)))
         }).bind(to: EndTimeLabel.rx.text).disposed(by: self.disposeBag)
         
         //set timer
@@ -84,7 +98,15 @@ class AssignmentCreateViewController: UIViewController {
     
     @objc func updateCurrentTime()
     {
-        StartTime.value = Date()
+        currentTime.value = Date()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "ShowAssignmentProcessView")
+        {
+            let destViewController = segue.destination as! AssignmentProcessViewController
+            destViewController.timeSecond = self.timeSecond.value
+        }
     }
 
     override func didReceiveMemoryWarning() {
