@@ -262,6 +262,8 @@
                         <outlet property="EndPeriodLabel" destination="xde-1X-Yru" id="7Xx-MW-ngp"/>
                         <outlet property="EndTimeLabel" destination="eMR-Ry-UKV" id="28n-1o-5rW"/>
                         <outlet property="MainTimePickerView" destination="Aza-S9-eca" id="lYf-cs-2zb"/>
+                        <outlet property="StartPeriodLabel" destination="WJP-lW-ybT" id="uoK-vc-ztG"/>
+                        <outlet property="StartTimeLabel" destination="aPb-Pc-evA" id="vmQ-Jt-BmK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHH-gz-1sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
