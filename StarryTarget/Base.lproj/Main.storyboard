@@ -390,6 +390,7 @@
                         <outlet property="HourLabel" destination="j1J-0a-UgL" id="VgP-V9-oRQ"/>
                         <outlet property="MinuteLabel" destination="6xT-Z4-2Wp" id="VW3-gx-Vlw"/>
                         <outlet property="SecondLabel" destination="gZF-qA-xHA" id="DNX-n0-gDz"/>
+                        <segue destination="XU2-Gf-9Gg" kind="show" identifier="ShowAssignmentAchieveView" id="XDq-ai-yPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6Y-Sa-IJH" userLabel="First Responder" sceneMemberID="firstResponder"/>

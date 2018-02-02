@@ -56,7 +56,20 @@ class AssignmentProcessViewController: UIViewController {
         SecondLabel.text = "\(second)"
         
         timeSecond = timeSecond! - 1
+        
+        if(_timeSecond! <= 0)
+        {
+            timer?.invalidate()
+            segueToAnotherScreen()
+        }
+        
     }
+    
+    func segueToAnotherScreen(){
+        performSegue(withIdentifier: "ShowAssignmentAchieveView", sender: nil)
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
