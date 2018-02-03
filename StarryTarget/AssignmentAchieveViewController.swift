@@ -17,17 +17,33 @@ class AssignmentAchieveViewController: UIViewController {
     @IBOutlet weak var QuoteContentLabel: UILabel!
     @IBOutlet weak var QuoteAuthorLabel: UILabel!
     
+    //thread
+    private var loadAnimationThread:Thread?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        //Load animation images into AnimationImageView
-        AnimationImageView.image = UIImage.animatedImageNamed("moon-cloud/moon-cloud_", duration: 3)
+        //set thread
+        loadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
+        loadAnimationThread?.start()
+    }
+    
+    @objc func loadAnimation()
+    {
+        let animation = UIImage.animatedImageNamed("moon-cloud/moon-cloud_", duration: 3)
+        if(animation != nil)
+        {
+            performSelector(onMainThread: #selector(setAnimation(animation:)), with: animation, waitUntilDone: true)
+        }
+    }
+    
+    @objc func setAnimation(animation:UIImage)
+    {
+        AnimationImageView.image = animation
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

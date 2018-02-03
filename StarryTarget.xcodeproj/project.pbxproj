@@ -26,6 +26,7 @@
 		EBCA134D2015CD5C007A91DE /* AddBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */; };
 		EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */; };
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
+		EBE9328F2025EA0C00BFE50A /* Quotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9328E2025EA0C00BFE50A /* Quotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBtnTableViewCell.xib; sourceTree = "<group>"; };
 		EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
+		EBE9328E2025EA0C00BFE50A /* Quotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				EB26C6CD201025FF006AAEA1 /* ViewModels */,
 				EB7F0684200C8F3A0035A274 /* AppDelegate.swift */,
 				EB7F0688200C8F3A0035A274 /* Main.storyboard */,
+				EBE9328E2025EA0C00BFE50A /* Quotation.swift */,
 				EBCA134A2015CD5C007A91DE /* AddBtnTableViewCell.swift */,
 				EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */,
 				EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */,
@@ -280,6 +283,7 @@
 			files = (
 				EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */,
 				EBCA134C2015CD5C007A91DE /* AddBtnTableViewCell.swift in Sources */,
+				EBE9328F2025EA0C00BFE50A /* Quotation.swift in Sources */,
 				EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */,
 				EB706C8E201972F000BFB9DE /* TimePickerView.swift in Sources */,
 				EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */,

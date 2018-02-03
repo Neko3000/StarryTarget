@@ -33,7 +33,7 @@ class AssignmentProcessViewController: UIViewController {
     private var timer:Timer?
     
     //thread
-    private var LoadAnimationThread:Thread?
+    private var loadAnimationThread:Thread?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +47,8 @@ class AssignmentProcessViewController: UIViewController {
         
 
         //set thread
-        LoadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
-        LoadAnimationThread?.start()
+        loadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
+        loadAnimationThread?.start()
     }
 
     @objc func updateTime(){
