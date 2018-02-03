@@ -8,4 +8,5 @@ target 'StarryTarget' do
   # Pods for StarryTarget
   pod 'RxSwift'
   pod 'RxCocoa'    
+  pod 'RealmSwift'
 end

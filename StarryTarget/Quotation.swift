@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Quotation: Object {
+    @objc dynamic var Id:Int = 0
+    @objc dynamic var Content:String = ""
+    @objc dynamic var Author:String = ""
+    
+    override class func primaryKey() -> String{
+        return "Id"
+    }
+}
