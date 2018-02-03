@@ -32,18 +32,23 @@ class AssignmentProcessViewController: UIViewController {
     
     private var timer:Timer?
     
+    //thread
+    private var LoadAnimationThread:Thread?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        //load animation images into AnimationImageView
-        AnimationImageView.image = UIImage.animatedImageNamed("person-working/person-working_", duration: 10)
-        AnimationImageView.contentMode = .scaleAspectFill
-        AnimationImageView.startAnimating()
+        
         
         //set timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        
+
+        //set thread
+        LoadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
+        LoadAnimationThread?.start()
     }
 
     @objc func updateTime(){
@@ -69,6 +74,25 @@ class AssignmentProcessViewController: UIViewController {
         performSegue(withIdentifier: "ShowAssignmentAchieveView", sender: nil)
     }
     
+    //func for AnimationImageView
+    //note: one of the alternatives is to use Thread to preload animation, then use instantiateViewController and present to show this view without segue in the previous viewController, it may need to use loadViewIfNeeded here.
+    
+    @objc func loadAnimation()
+    {
+        let animation = UIImage.animatedImageNamed("person-working/person-working_", duration: 3)
+        if(animation != nil)
+        {
+            performSelector(onMainThread: #selector(setAnimation(animation:)), with: animation, waitUntilDone: true)
+        }
+
+    }
+
+    @objc func setAnimation(animation:UIImage)
+    {
+        AnimationImageView.image = animation
+        AnimationImageView.contentMode = .scaleAspectFill
+        AnimationImageView.startAnimating()
+    }
     
     
     override func didReceiveMemoryWarning() {

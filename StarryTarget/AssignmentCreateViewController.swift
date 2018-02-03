@@ -27,7 +27,7 @@ class AssignmentCreateViewController: UIViewController {
     private var timeSecond:Variable<Int> = Variable<Int>(0)
     
     var disposeBag = DisposeBag()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -114,7 +114,6 @@ class AssignmentCreateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

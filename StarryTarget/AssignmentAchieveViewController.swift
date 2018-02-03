@@ -23,7 +23,7 @@ class AssignmentAchieveViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Load animation images into AnimationImageView
-        AnimationImageView.image = UIImage.animatedImageNamed("moon-cloud/moon-cloud_", duration: 5)
+        AnimationImageView.image = UIImage.animatedImageNamed("moon-cloud/moon-cloud_", duration: 3)
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
         
