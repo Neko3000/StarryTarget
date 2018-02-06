@@ -26,12 +26,16 @@ class AssignmentAchieveViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        //load quotes
+        loadQuote()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         //set thread
         loadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
         loadAnimationThread?.start()
-        
-        //load quotes
-        loadQuote()
     }
     
     @objc func loadAnimation()

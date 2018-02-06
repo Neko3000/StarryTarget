@@ -14,9 +14,11 @@ class AssignmentProcessViewController: UIViewController {
     @IBOutlet weak var MinuteLabel: UILabel!
     @IBOutlet weak var SecondLabel: UILabel!
     
-    //Components
+    //components
     @IBOutlet weak var AnimationImageView: UIImageView!
     
+    //timeSecond
+    private var _timeSecond:Int? = 0
     public var timeSecond:Int?{
         set(value){
             _timeSecond = value
@@ -26,11 +28,9 @@ class AssignmentProcessViewController: UIViewController {
         }
     }
     
-    private var _timeSecond:Int? = 0
-    
-    private var timeSecondCounter:Int? = 0
-    
+    //timer
     private var timer:Timer?
+    private var timeSecondCounter:Int? = 0
     
     //thread
     private var loadAnimationThread:Thread?
@@ -40,29 +40,31 @@ class AssignmentProcessViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
-        
         //set timer
+        timeSecondCounter = timeSecond
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-
         //set thread
         loadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
         loadAnimationThread?.start()
     }
 
     @objc func updateTime(){
-        let hour:Int = _timeSecond! / 3600
-        let minute:Int = (_timeSecond! % 3600)/60
-        let second:Int = _timeSecond! % 60
+        let hour:Int = timeSecondCounter! / 3600
+        let minute:Int = (timeSecondCounter! % 3600)/60
+        let second:Int = timeSecondCounter! % 60
         
         HourLabel.text = "\(hour)"
         MinuteLabel.text = "\(minute)"
         SecondLabel.text = "\(second)"
         
-        timeSecond = timeSecond! - 1
+        timeSecondCounter = timeSecondCounter! - 1
         
-        if(_timeSecond! <= 0)
+        if(timeSecondCounter! <= 0)
         {
             timer?.invalidate()
             segueToAnotherScreen()
