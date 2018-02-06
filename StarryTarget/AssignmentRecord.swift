@@ -11,15 +11,16 @@ import RealmSwift
 
 class AssignmentRecord: Object {
     @objc var id:Int = 0
-    @objc var title:String = ""
+    @objc var name:String = ""
     @objc var shortDescription:String = ""
     @objc var startTime:Date = Date()
     @objc var timeSecond:Int = 0
     @objc var isAchieved:Bool = false
     
-    convenience init(title:String,shortDescription:String,startTime:Date,timeSecond:Int,isAchieved:Bool){
+    convenience init(id:Int,name:String,shortDescription:String,startTime:Date,timeSecond:Int,isAchieved:Bool){
         self.init()
-        self.title = title
+        self.id = id
+        self.name = name
         self.shortDescription = shortDescription
         self.startTime = startTime
         self.timeSecond = timeSecond

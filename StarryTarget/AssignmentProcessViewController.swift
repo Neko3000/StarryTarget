@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AssignmentProcessViewController: UIViewController {
     
@@ -17,7 +18,16 @@ class AssignmentProcessViewController: UIViewController {
     //components
     @IBOutlet weak var AnimationImageView: UIImageView!
     
-    //timeSecond
+    //related variables
+    private var _startTime:Date? = Date()
+    public var startTime:Date?{
+        set(value){
+            _startTime = value
+        }
+        get{
+            return _startTime
+        }
+    }
     private var _timeSecond:Int? = 0
     public var timeSecond:Int?{
         set(value){
@@ -27,7 +37,26 @@ class AssignmentProcessViewController: UIViewController {
             return _timeSecond
         }
     }
+    private var _name:String? = ""
+    public var name:String?{
+        set(value){
+            _name = value
+        }
+        get{
+            return _name
+        }
+    }
     
+    private var _shortDescription:String? = ""
+    public var shortDescription:String?{
+        set(value){
+            _shortDescription = value
+        }
+        get{
+            return _shortDescription
+        }
+    }
+
     //timer
     private var timer:Timer?
     private var timeSecondCounter:Int? = 0
@@ -94,6 +123,26 @@ class AssignmentProcessViewController: UIViewController {
         AnimationImageView.image = animation
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
+    }
+    
+    private func createRecord(nameWith name:String,shortDescriptionWith shortDescription:String,startAt startTime:Date,withTimeSecond timeSecond:Int,result isAchieved:Bool)
+    {
+        let realm = try! Realm()
+        let realmManager = RealmManager()
+        
+        try! realm.write {
+            realm.add(AssignmentRecord(id:realmManager.GetMaxValue(ofType: AssignmentRecord.self, ofProperty: "id")! + 1,name: name, shortDescription: shortDescription, startTime: startTime, timeSecond: timeSecond, isAchieved: isAchieved))
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier! {
+        case "ShowAssignmentCreateView": 
+            createRecord(nameWith: _name!, shortDescriptionWith: _shortDescription!, startAt: _startTime!, withTimeSecond: _timeSecond!, result: false)
+        case "ShowAssignmentAchieveView":
+            break
+        default:
+            break
+        }
     }
     
     override func didReceiveMemoryWarning() {

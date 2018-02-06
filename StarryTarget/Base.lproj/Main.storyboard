@@ -265,6 +265,8 @@
                         <outlet property="EndPeriodLabel" destination="xde-1X-Yru" id="7Xx-MW-ngp"/>
                         <outlet property="EndTimeLabel" destination="eMR-Ry-UKV" id="28n-1o-5rW"/>
                         <outlet property="MainTimePickerView" destination="Aza-S9-eca" id="lYf-cs-2zb"/>
+                        <outlet property="NameLabel" destination="eFQ-sf-nBK" id="tNC-hn-fI3"/>
+                        <outlet property="ShortDescriptionLabel" destination="cPE-6R-ovq" id="7g3-4m-N0l"/>
                         <outlet property="StartPeriodLabel" destination="WJP-lW-ybT" id="uoK-vc-ztG"/>
                         <outlet property="StartTimeLabel" destination="aPb-Pc-evA" id="vmQ-Jt-BmK"/>
                     </connections>
@@ -352,6 +354,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2s-hi-BCL">
                                 <rect key="frame" x="160" y="562" width="54" height="54"/>
                                 <state key="normal" image="btn-cancel"/>
+                                <connections>
+                                    <segue destination="rth-AZ-JyO" kind="show" identifier="ShowAssignmentCreateView" id="Vzh-bb-que"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-dZ-ntm">
                                 <rect key="frame" x="127.5" y="483.5" width="120.5" height="55.5"/>
@@ -490,4 +495,7 @@
         <image name="Main-Background" width="375" height="667"/>
         <image name="btn-cancel" width="54" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vzh-bb-que"/>
+    </inferredMetricsTieBreakers>
 </document>

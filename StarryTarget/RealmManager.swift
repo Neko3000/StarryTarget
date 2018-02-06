@@ -44,7 +44,7 @@ class RealmManager: IRealmManager {
         print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
-    public func GetMaxValue(ofType type:Object.Type,ofProperty property:String)->Int?
+    public func GetMaxValue(ofType type:Object.Type,ofProperty property:String)->Int!
     {
         return realm?.objects(type).max(ofProperty:property) as Int? ?? 0
     }

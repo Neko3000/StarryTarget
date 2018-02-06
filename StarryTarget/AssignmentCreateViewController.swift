@@ -14,12 +14,14 @@ class AssignmentCreateViewController: UIViewController {
     
     @IBOutlet weak var MainTimePickerView: TimePickerView!
     
-    
     @IBOutlet weak var StartPeriodLabel: UILabel!
     @IBOutlet weak var StartTimeLabel: UILabel!
     
     @IBOutlet weak var EndPeriodLabel: UILabel!
     @IBOutlet weak var EndTimeLabel: UILabel!
+    
+    @IBOutlet weak var NameLabel: UITextField!
+    @IBOutlet weak var ShortDescriptionLabel: UITextField!
     
     private var timer:Timer?
     
@@ -106,6 +108,9 @@ class AssignmentCreateViewController: UIViewController {
         {
             let destViewController = segue.destination as! AssignmentProcessViewController
             destViewController.timeSecond = self.timeSecond.value
+            destViewController.startTime = self.currentTime.value
+            destViewController.name = self.NameLabel.text
+            destViewController.shortDescription = self.ShortDescriptionLabel.text
         }
     }
 
