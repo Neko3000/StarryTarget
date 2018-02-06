@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AssignmentAchieveViewController: UIViewController {
 
@@ -28,6 +29,9 @@ class AssignmentAchieveViewController: UIViewController {
         //set thread
         loadAnimationThread = Thread(target: self, selector: #selector(loadAnimation), object: nil)
         loadAnimationThread?.start()
+        
+        //load quotes
+        loadQuote()
     }
     
     @objc func loadAnimation()
@@ -44,6 +48,16 @@ class AssignmentAchieveViewController: UIViewController {
         AnimationImageView.image = animation
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
+    }
+    
+    func loadQuote()
+    {
+        let realm = try! Realm()
+        let quotes = realm.objects(Quote.self)
+        let randomIndex = Int(random: Range<Int>(0..<quotes.count))
+        
+        QuoteContentLabel.text = quotes[randomIndex].content
+        QuoteAuthorLabel.text = quotes[randomIndex].author
     }
 
     override func didReceiveMemoryWarning() {

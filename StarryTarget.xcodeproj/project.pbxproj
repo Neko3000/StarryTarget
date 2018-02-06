@@ -13,6 +13,7 @@
 		EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */; };
 		EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6DE2010524E006AAEA1 /* MainViewController.swift */; };
 		EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */; };
+		EB5C429620299A58000157C5 /* RandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C429520299A58000157C5 /* RandomInt.swift */; };
 		EB706C8E201972F000BFB9DE /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB706C8D201972F000BFB9DE /* TimePickerView.swift */; };
 		EB7E6FFE201F1CA400338614 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7E6FFD201F1CA400338614 /* DateTime.swift */; };
 		EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F0684200C8F3A0035A274 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentListTableView.swift; sourceTree = "<group>"; };
 		EB26C6DE2010524E006AAEA1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentProcessViewController.swift; sourceTree = "<group>"; };
+		EB5C429520299A58000157C5 /* RandomInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInt.swift; sourceTree = "<group>"; };
 		EB706C8D201972F000BFB9DE /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		EB7E6FFD201F1CA400338614 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		EB7F0681200C8F390035A274 /* StarryTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarryTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 				EB11D9C12025F2B40073213F /* RealmManager.swift */,
 				EBE9328E2025EA0C00BFE50A /* Quote.swift */,
 				EBF7A086202802D800165286 /* AssignmentRecord.swift */,
+				EB5C429520299A58000157C5 /* RandomInt.swift */,
 				EB7E6FFD201F1CA400338614 /* DateTime.swift */,
 				EBCA13452015B9FA007A91DE /* Resource */,
 			);
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB11D9C22025F2B40073213F /* RealmManager.swift in Sources */,
+				EB5C429620299A58000157C5 /* RandomInt.swift in Sources */,
 				EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */,
 				EBCA134C2015CD5C007A91DE /* AddBtnTableViewCell.swift in Sources */,
 				EBE9328F2025EA0C00BFE50A /* Quote.swift in Sources */,
