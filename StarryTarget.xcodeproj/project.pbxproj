@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DECB8CE85435697FB4EB68D2 /* Pods_StarryTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056FA52E68F5CDB726AF39A3 /* Pods_StarryTarget.framework */; };
-		EB11D9C22025F2B40073213F /* RealmInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11D9C12025F2B40073213F /* RealmInitializer.swift */; };
+		EB11D9C22025F2B40073213F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11D9C12025F2B40073213F /* RealmManager.swift */; };
 		EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */; };
 		EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */; };
 		EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6DE2010524E006AAEA1 /* MainViewController.swift */; };
@@ -27,14 +27,15 @@
 		EBCA134D2015CD5C007A91DE /* AddBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */; };
 		EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */; };
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
-		EBE9328F2025EA0C00BFE50A /* Quotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9328E2025EA0C00BFE50A /* Quotation.swift */; };
+		EBE9328F2025EA0C00BFE50A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9328E2025EA0C00BFE50A /* Quote.swift */; };
+		EBF7A087202802D800165286 /* AssignmentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7A086202802D800165286 /* AssignmentRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		056FA52E68F5CDB726AF39A3 /* Pods_StarryTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarryTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		382EFA502B34B34816DBAB48 /* Pods-StarryTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarryTarget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarryTarget/Pods-StarryTarget.debug.xcconfig"; sourceTree = "<group>"; };
 		7953779035D8825E6FBFF24E /* Pods-StarryTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarryTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarryTarget/Pods-StarryTarget.release.xcconfig"; sourceTree = "<group>"; };
-		EB11D9C12025F2B40073213F /* RealmInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmInitializer.swift; sourceTree = "<group>"; };
+		EB11D9C12025F2B40073213F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
 		EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentListTableView.swift; sourceTree = "<group>"; };
 		EB26C6DE2010524E006AAEA1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +56,8 @@
 		EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBtnTableViewCell.xib; sourceTree = "<group>"; };
 		EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
-		EBE9328E2025EA0C00BFE50A /* Quotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotation.swift; sourceTree = "<group>"; };
+		EBE9328E2025EA0C00BFE50A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		EBF7A086202802D800165286 /* AssignmentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,6 @@
 				EB26C6CD201025FF006AAEA1 /* ViewModels */,
 				EB7F0684200C8F3A0035A274 /* AppDelegate.swift */,
 				EB7F0688200C8F3A0035A274 /* Main.storyboard */,
-				EBE9328E2025EA0C00BFE50A /* Quotation.swift */,
 				EBCA134A2015CD5C007A91DE /* AddBtnTableViewCell.swift */,
 				EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */,
 				EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */,
@@ -133,7 +134,9 @@
 				EB7F0690200C8F3A0035A274 /* Info.plist */,
 				EB706C8D201972F000BFB9DE /* TimePickerView.swift */,
 				EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */,
-				EB11D9C12025F2B40073213F /* RealmInitializer.swift */,
+				EB11D9C12025F2B40073213F /* RealmManager.swift */,
+				EBE9328E2025EA0C00BFE50A /* Quote.swift */,
+				EBF7A086202802D800165286 /* AssignmentRecord.swift */,
 				EB7E6FFD201F1CA400338614 /* DateTime.swift */,
 				EBCA13452015B9FA007A91DE /* Resource */,
 			);
@@ -288,15 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB11D9C22025F2B40073213F /* RealmInitializer.swift in Sources */,
+				EB11D9C22025F2B40073213F /* RealmManager.swift in Sources */,
 				EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */,
 				EBCA134C2015CD5C007A91DE /* AddBtnTableViewCell.swift in Sources */,
-				EBE9328F2025EA0C00BFE50A /* Quotation.swift in Sources */,
+				EBE9328F2025EA0C00BFE50A /* Quote.swift in Sources */,
 				EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */,
 				EB706C8E201972F000BFB9DE /* TimePickerView.swift in Sources */,
 				EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */,
 				EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */,
 				EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */,
+				EBF7A087202802D800165286 /* AssignmentRecord.swift in Sources */,
 				EBCA13472015BFDB007A91DE /* AssignmentAchieveViewController.swift in Sources */,
 				EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */,
 				EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */,
