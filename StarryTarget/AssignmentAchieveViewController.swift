@@ -12,7 +12,6 @@ import RealmSwift
 class AssignmentAchieveViewController: UIViewController {
 
     //Components
-    
     @IBOutlet weak var AnimationImageView: UIImageView!
     
     @IBOutlet weak var QuoteContentLabel: UILabel!

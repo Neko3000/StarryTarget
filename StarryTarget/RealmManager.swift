@@ -13,7 +13,7 @@ protocol IRealmManager: class{
     
     var realm:Realm? { get }
     
-    func Initialize()
+    func initialize()
 }
 
 class RealmManager: IRealmManager {
@@ -23,7 +23,7 @@ class RealmManager: IRealmManager {
         realm = try! Realm()
     }
     
-    public func Initialize() {
+    public func initialize() {
         let quotations =  realm?.objects(Quote.self)
         let assignmentRecords = realm?.objects(AssignmentRecord.self)
         
@@ -44,8 +44,9 @@ class RealmManager: IRealmManager {
         print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
-    public func GetMaxValue(ofType type:Object.Type,ofProperty property:String)->Int!
+    public func getMaxValue(ofType type:Object.Type,ofProperty property:String)->Int!
     {
         return realm?.objects(type).max(ofProperty:property) as Int? ?? 0
     }
+    
 }

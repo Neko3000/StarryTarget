@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "AssignmentAchieveViewController.AddQuote(_:):AssignmentAchieveViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.qs.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

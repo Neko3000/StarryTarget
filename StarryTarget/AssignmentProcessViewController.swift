@@ -125,21 +125,21 @@ class AssignmentProcessViewController: UIViewController {
         AnimationImageView.startAnimating()
     }
     
-    private func createRecord(nameWith name:String,shortDescriptionWith shortDescription:String,startAt startTime:Date,withTimeSecond timeSecond:Int,result isAchieved:Bool)
+    private func createRecord(withName name:String,withShortDescription shortDescription:String,startAt startTime:Date,withTimeSecond timeSecond:Int,result isAchieved:Bool)
     {
         let realm = try! Realm()
         let realmManager = RealmManager()
         
         try! realm.write {
-            realm.add(AssignmentRecord(id:realmManager.GetMaxValue(ofType: AssignmentRecord.self, ofProperty: "id")! + 1,name: name, shortDescription: shortDescription, startTime: startTime, timeSecond: timeSecond, isAchieved: isAchieved))
+            realm.add(AssignmentRecord(id:realmManager.getMaxValue(ofType: AssignmentRecord.self, ofProperty: "id")! + 1,name: (name.isEmpty ? "nameless" : name), shortDescription: shortDescription, startTime: startTime, timeSecond: timeSecond, isAchieved: isAchieved))
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier! {
         case "ShowAssignmentCreateView": 
-            createRecord(nameWith: _name!, shortDescriptionWith: _shortDescription!, startAt: _startTime!, withTimeSecond: _timeSecond!, result: false)
+            createRecord(withName: _name!, withShortDescription: _shortDescription!, startAt: _startTime!, withTimeSecond: _timeSecond!, result: false)
         case "ShowAssignmentAchieveView":
-            break
+            createRecord(withName: _name!, withShortDescription: _shortDescription!, startAt: _startTime!, withTimeSecond: _timeSecond!, result: true)
         default:
             break
         }
