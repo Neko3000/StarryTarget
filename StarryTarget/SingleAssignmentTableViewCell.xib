@@ -24,7 +24,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="321" height="89.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-Pf-NBO">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-Pf-NBO">
                         <rect key="frame" x="15" y="15" width="40" height="40"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uv8-gt-cKF">
@@ -47,7 +47,7 @@
                         <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-yZ-tcH">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-yZ-tcH">
                         <rect key="frame" x="296" y="65" width="13" height="13"/>
                     </imageView>
                 </subviews>
@@ -65,14 +65,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="IsAchievedImageView" destination="0Bf-yZ-tcH" id="Q3Y-Dq-74C"/>
+                <outlet property="NameLabel" destination="Uv8-gt-cKF" id="NqA-Xx-kG8"/>
                 <outlet property="TimeLabel" destination="egp-Ky-mek" id="swu-KD-xIF"/>
-                <outlet property="TitleLabel" destination="Uv8-gt-cKF" id="rAg-T2-9B8"/>
             </connections>
             <point key="canvasLocation" x="25.5" y="75"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Check" width="13" height="13"/>
-        <image name="Clock" width="40" height="40"/>
+        <image name="checked" width="13" height="13"/>
+        <image name="clock" width="40" height="40"/>
     </resources>
 </document>

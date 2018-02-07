@@ -38,7 +38,12 @@ class RealmManager: IRealmManager {
         
         if(assignmentRecords?.count == 0)
         {
-            
+            try! realm?.write {
+                realm?.add(AssignmentRecord(id: (realm?.objects(AssignmentRecord.self).max(ofProperty: "id") as Int? ?? 0) + 1, name: "Sail", shortDescription: "To find our lost treasure", startTime: Date().addingTimeInterval(24000), timeSecond: 300, isAchieved: true))
+                realm?.add(AssignmentRecord(id: (realm?.objects(AssignmentRecord.self).max(ofProperty: "id") as Int? ?? 0) + 1, name: "Reorganize", shortDescription: "Make everything well, at least looked well", startTime: Date(), timeSecond: 20, isAchieved: false))
+                realm?.add(AssignmentRecord(id: (realm?.objects(AssignmentRecord.self).max(ofProperty: "id") as Int? ?? 0) + 1, name: "Unnamed", shortDescription: "", startTime: Date().addingTimeInterval(-300), timeSecond: 15, isAchieved: true))
+                realm?.add(AssignmentRecord(id: (realm?.objects(AssignmentRecord.self).max(ofProperty: "id") as Int? ?? 0) + 1, name: "Singing", shortDescription: "Today's beauty is our \"Havana\"", startTime: Date().addingTimeInterval(-6000), timeSecond: 7200, isAchieved: true))
+            }
         }
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)

@@ -10,12 +10,12 @@ import Foundation
 import RealmSwift
 
 class AssignmentRecord: Object {
-    @objc var id:Int = 0
-    @objc var name:String = ""
-    @objc var shortDescription:String = ""
-    @objc var startTime:Date = Date()
-    @objc var timeSecond:Int = 0
-    @objc var isAchieved:Bool = false
+    @objc dynamic var id:Int = 0
+    @objc dynamic var name:String = ""
+    @objc dynamic var shortDescription:String = ""
+    @objc dynamic var startTime:Date = Date()
+    @objc dynamic var timeSecond:Int = 0
+    @objc dynamic var isAchieved:Bool = false
     
     convenience init(id:Int,name:String,shortDescription:String,startTime:Date,timeSecond:Int,isAchieved:Bool){
         self.init()

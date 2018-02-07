@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "AssignmentListTableView.tableView(_:cellForRowAt:):AssignmentListTableView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "assignmentRecords[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AssignmentProcessViewController.viewDidLoad():AssignmentProcessViewController.swift">
          <PersistentStrings>
             <PersistentString

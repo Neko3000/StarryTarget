@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController,SegueBehaviorObject{
     
-    @IBOutlet weak var MainTableView: AssigmentListTableView!
+    @IBOutlet weak var MainTableView: AssignmentListTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

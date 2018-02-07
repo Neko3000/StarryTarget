@@ -10,8 +10,9 @@ import UIKit
 
 class SingleAssignmentTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var NameLabel: UILabel!
     @IBOutlet weak var TimeLabel: UILabel!
+    @IBOutlet weak var IsAchievedImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

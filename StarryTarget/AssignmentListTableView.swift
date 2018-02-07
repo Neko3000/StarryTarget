@@ -8,17 +8,24 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class AssigmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSource
+class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSource
 {
     //private weak var ExternalSegueBehavior:SegueBehavior?
     
-    //Reference of the AddBtnTableViewCell
+    //reference of the AddBtnTableViewCell
     public var AddBtnTableViewCell:AddBtnTableViewCell?
+    
+    //main-data
+    private lazy var assignmentRecords:Results<AssignmentRecord> = {
+        var realm = try! Realm()
+        return realm.objects(AssignmentRecord.self)
+    }()
     
     override func layoutSubviews() {
         
-        //Clear tableview's separatorStyle
+        //clear tableview's separatorStyle
         self.separatorStyle = .none
         
         self.register(UINib(nibName : "SingleAssignmentTableViewCell", bundle : nil), forCellReuseIdentifier: "SingleAssignmentTableViewCell");
@@ -40,7 +47,7 @@ class AssigmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSour
         
         var cell:UITableViewCell?
         
-        //The section of Index = 0 contains the AddBtnTableViewCell
+        //the section of Index = 0 contains the AddBtnTableViewCell
         if(indexPath.section == 0)
         {
             let specificCell = self.dequeueReusableCell(withIdentifier: "AddBtnTableViewCell") as! AddBtnTableViewCell
@@ -52,8 +59,14 @@ class AssigmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSour
         {
             let specificCell = self.dequeueReusableCell(withIdentifier: "SingleAssignmentTableViewCell") as! SingleAssignmentTableViewCell
             
-            specificCell.TitleLabel.text = "There is title"
-            specificCell.TimeLabel.text = "There is time"
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "HH:mm.a"
+
+            let assignmentRecord = assignmentRecords[indexPath.section - 1]
+            
+            specificCell.NameLabel.text = assignmentRecord.name
+            specificCell.TimeLabel.text = dateFormatter.string(from: assignmentRecord.startTime) + " - " + dateFormatter.string(from: assignmentRecord.startTime.addingTimeInterval(Double(assignmentRecord.timeSecond)))
+            specificCell.IsAchievedImageView.image = assignmentRecord.isAchieved ? UIImage(named: "checked"):UIImage(named:"canceled")
             
             cell = specificCell
         }
@@ -63,17 +76,17 @@ class AssigmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //To make the spacing between each cells, put every single cell into a independent section
+        //to make the spacing between each cells, put every single cell into a independent section
         return 1;
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5;
+        return assignmentRecords.count + 1;
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        //To simulate the spacing, section's header is a transparent UIView
+        //to simulate the spacing, section's header is a transparent UIView
         let tempView = UIView()
         tempView.backgroundColor = UIColor.clear
         return tempView

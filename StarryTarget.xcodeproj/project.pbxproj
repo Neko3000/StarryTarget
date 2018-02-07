@@ -10,7 +10,7 @@
 		DECB8CE85435697FB4EB68D2 /* Pods_StarryTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056FA52E68F5CDB726AF39A3 /* Pods_StarryTarget.framework */; };
 		EB11D9C22025F2B40073213F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11D9C12025F2B40073213F /* RealmManager.swift */; };
 		EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */; };
-		EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */; };
+		EB26C6D1201026ED006AAEA1 /* AssignmentListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6D0201026ED006AAEA1 /* AssignmentListTableView.swift */; };
 		EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26C6DE2010524E006AAEA1 /* MainViewController.swift */; };
 		EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */; };
 		EB5C429620299A58000157C5 /* RandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C429520299A58000157C5 /* RandomInt.swift */; };
@@ -38,7 +38,7 @@
 		7953779035D8825E6FBFF24E /* Pods-StarryTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarryTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarryTarget/Pods-StarryTarget.release.xcconfig"; sourceTree = "<group>"; };
 		EB11D9C12025F2B40073213F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
-		EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentListTableView.swift; sourceTree = "<group>"; };
+		EB26C6D0201026ED006AAEA1 /* AssignmentListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListTableView.swift; sourceTree = "<group>"; };
 		EB26C6DE2010524E006AAEA1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentProcessViewController.swift; sourceTree = "<group>"; };
 		EB5C429520299A58000157C5 /* RandomInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInt.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */,
 				EB7F0690200C8F3A0035A274 /* Info.plist */,
 				EB706C8D201972F000BFB9DE /* TimePickerView.swift */,
-				EB26C6D0201026ED006AAEA1 /* AssigmentListTableView.swift */,
+				EB26C6D0201026ED006AAEA1 /* AssignmentListTableView.swift */,
 				EB11D9C12025F2B40073213F /* RealmManager.swift */,
 				EBE9328E2025EA0C00BFE50A /* Quote.swift */,
 				EBF7A086202802D800165286 /* AssignmentRecord.swift */,
@@ -296,7 +296,7 @@
 			files = (
 				EB11D9C22025F2B40073213F /* RealmManager.swift in Sources */,
 				EB5C429620299A58000157C5 /* RandomInt.swift in Sources */,
-				EB26C6D1201026ED006AAEA1 /* AssigmentListTableView.swift in Sources */,
+				EB26C6D1201026ED006AAEA1 /* AssignmentListTableView.swift in Sources */,
 				EBCA134C2015CD5C007A91DE /* AddBtnTableViewCell.swift in Sources */,
 				EBE9328F2025EA0C00BFE50A /* Quote.swift in Sources */,
 				EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */,

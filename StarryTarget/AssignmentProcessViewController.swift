@@ -131,7 +131,7 @@ class AssignmentProcessViewController: UIViewController {
         let realmManager = RealmManager()
         
         try! realm.write {
-            realm.add(AssignmentRecord(id:realmManager.getMaxValue(ofType: AssignmentRecord.self, ofProperty: "id")! + 1,name: (name.isEmpty ? "nameless" : name), shortDescription: shortDescription, startTime: startTime, timeSecond: timeSecond, isAchieved: isAchieved))
+            realm.add(AssignmentRecord(id:realmManager.getMaxValue(ofType: AssignmentRecord.self, ofProperty: "id")! + 1,name: (name.isEmpty ? "Unnamed" : name), shortDescription: shortDescription, startTime: startTime, timeSecond: timeSecond, isAchieved: isAchieved))
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
