@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol SegueBehaviorObject:NSObjectProtocol{
-    func SegueToAnotherScreen()->Void;
-}
-
 class AddBtnTableViewCell: UITableViewCell {
     
     //A variable provided to outside for calling
@@ -29,6 +25,6 @@ class AddBtnTableViewCell: UITableViewCell {
     }
     
     @IBAction func AddBtnTouchUpInside(_ sender: Any) {
-        ViewControllerWithSegueBehavior?.SegueToAnotherScreen()
+        ViewControllerWithSegueBehavior?.SegueToAnotherScreen(withIdentifier: "CreateAssignment",sender:nil)
     }
 }

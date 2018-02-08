@@ -14,12 +14,15 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
 {
     //private weak var ExternalSegueBehavior:SegueBehavior?
     
+    //reference of the MainViewController
+    public var ViewControllerWithSegueBehavior:SegueBehaviorObject?
+    
     //reference of the AddBtnTableViewCell
     public var AddBtnTableViewCell:AddBtnTableViewCell?
-    
+
     //main-data
     private lazy var assignmentRecords:Results<AssignmentRecord> = {
-        var realm = try! Realm()
+        let realm = try! Realm()
         return realm.objects(AssignmentRecord.self)
     }()
     
@@ -94,5 +97,20 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 12
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let assignmentRecord = AssignmentRecord(id: assignmentRecords[indexPath.section - 1].id,
+                                                name: assignmentRecords[indexPath.section - 1].name,
+                                                shortDescription: assignmentRecords[indexPath.section - 1].shortDescription,
+                                                startTime: assignmentRecords[indexPath.section - 1].startTime,
+                                                timeSecond: assignmentRecords[indexPath.section - 1].timeSecond,
+                                                isAchieved: assignmentRecords[indexPath.section - 1].isAchieved)
+   
+        if(indexPath.section > 0)
+        {
+            ViewControllerWithSegueBehavior?.SegueToAnotherScreen(withIdentifier: "LoadAssignment",sender:assignmentRecord)
+        }
     }
 }

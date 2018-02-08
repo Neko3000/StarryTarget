@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UIViewController,SegueBehaviorObject{
-    
+
     @IBOutlet weak var MainTableView: AssignmentListTableView!
     
     override func viewDidLoad() {
@@ -22,6 +22,7 @@ class MainViewController: UIViewController,SegueBehaviorObject{
         super.viewDidAppear(animated)
         
         MainTableView.AddBtnTableViewCell?.ViewControllerWithSegueBehavior = self
+        MainTableView.ViewControllerWithSegueBehavior = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +31,23 @@ class MainViewController: UIViewController,SegueBehaviorObject{
     }
     
     //Segue function handled by func AddBtnTouchUpInside in AddBtnTableCell of MainTableView
-    func SegueToAnotherScreen() {
-        performSegue(withIdentifier: "ShowAssignmentCreateView", sender: nil)
+    func SegueToAnotherScreen(withIdentifier identifier:String,sender:Any?) {
+        performSegue(withIdentifier: identifier, sender: sender)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destViewController = segue.destination as! AssignmentCreateViewController
+        
+        switch segue.identifier! {
+        case "CreateAssignment":
+            break
+        case "LoadAssignment":
+            let assignmentRecord = sender as! AssignmentRecord
+            destViewController.name = assignmentRecord.name
+            destViewController.shortDescription = assignmentRecord.shortDescription
+        default:
+            break
+        }
     }
 }
 

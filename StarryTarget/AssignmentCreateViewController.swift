@@ -28,6 +28,26 @@ class AssignmentCreateViewController: UIViewController {
     private var currentTime:Variable<Date> = Variable<Date>(Date())
     private var timeSecond:Variable<Int> = Variable<Int>(0)
     
+    private var _name:String?
+    public var name:String?{
+        get{
+            return _name
+        }
+        set(value){
+            _name = value
+        }
+    }
+    
+    private var _shortDescription:String?
+    public var shortDescription:String?{
+        get{
+            return _shortDescription
+        }
+        set(value){
+            _shortDescription = value
+        }
+    }
+    
     var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -91,6 +111,10 @@ class AssignmentCreateViewController: UIViewController {
         
         //set timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCurrentTime), userInfo: nil, repeats: true)
+        
+        //load assignment if it existes
+        NameLabel.text = _name
+        ShortDescriptionLabel.text = _shortDescription
     }
     
     @objc func showDatePicker(sender:UITapGestureRecognizer)

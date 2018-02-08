@@ -51,7 +51,8 @@
                     </view>
                     <connections>
                         <outlet property="MainTableView" destination="8yn-Af-HPu" id="oZ5-Ml-EtO"/>
-                        <segue destination="rth-AZ-JyO" kind="show" identifier="ShowAssignmentCreateView" id="KRl-c3-UgC"/>
+                        <segue destination="rth-AZ-JyO" kind="show" identifier="CreateAssignment" id="KRl-c3-UgC"/>
+                        <segue destination="rth-AZ-JyO" kind="show" identifier="LoadAssignment" id="qQQ-lp-4lT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

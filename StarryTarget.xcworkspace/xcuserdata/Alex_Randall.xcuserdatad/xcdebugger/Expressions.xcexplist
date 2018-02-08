@@ -3,12 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "AssignmentListTableView.tableView(_:cellForRowAt:):AssignmentListTableView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "assignmentRecords[1]">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "MainViewController.prepare(for:sender:):MainViewController.swift">
       </ContextState>
       <ContextState
          contextName = "AssignmentProcessViewController.viewDidLoad():AssignmentProcessViewController.swift">
@@ -19,12 +14,29 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "AssignmentListTableView.btns(_:):AssignmentListTableView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AssignmentListTableView.tableView(_:cellForRowAt:):AssignmentListTableView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "assignmentRecord.name">
+            </PersistentString>
+            <PersistentString
+               value = "assignmentRecords[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AssignmentAchieveViewController.AddQuote(_:):AssignmentAchieveViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "self.qs.count">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AssignmentListTableView.tableView(_:didSelectRowAt:):AssignmentListTableView.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>
