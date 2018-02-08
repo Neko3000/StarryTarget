@@ -8,12 +8,16 @@
 
 import UIKit
 import RealmSwift
+import RxSwift
 
 class AssignmentProcessViewController: UIViewController {
     
     @IBOutlet weak var HourLabel: UILabel!
     @IBOutlet weak var MinuteLabel: UILabel!
     @IBOutlet weak var SecondLabel: UILabel!
+    
+    @IBOutlet weak var CurrentTimePeriodLabel: UILabel!
+    @IBOutlet weak var CurrentTimeLabel: UILabel!
     
     //components
     @IBOutlet weak var AnimationImageView: UIImageView!
@@ -61,13 +65,33 @@ class AssignmentProcessViewController: UIViewController {
     private var timer:Timer?
     private var timeSecondCounter:Int? = 0
     
+    //current-time
+    private var currentTime:Variable<Date> = Variable<Date>(Date())
+    
     //thread
     private var loadAnimationThread:Thread?
+    
+    var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //observer UILabs
+        currentTime.asObservable().map({t -> String in
+            let dateFormatterForPeriod = DateFormatter()
+            dateFormatterForPeriod.dateFormat = "a"
+            
+            return dateFormatterForPeriod.string(from: t)
+        }).bind(to:CurrentTimePeriodLabel.rx.text).disposed(by: self.disposeBag)
+
+        currentTime.asObservable().map({t -> String in
+            let dateFormatterForTime = DateFormatter()
+            dateFormatterForTime.dateFormat = "HH:mm"
+            
+            return dateFormatterForTime.string(from: t)
+        }).bind(to:CurrentTimeLabel.rx.text).disposed(by: self.disposeBag)
         
         //set timer
         timeSecondCounter = timeSecond
@@ -93,12 +117,13 @@ class AssignmentProcessViewController: UIViewController {
         
         timeSecondCounter = timeSecondCounter! - 1
         
+        currentTime.value = Date()
+        
         if(timeSecondCounter! <= 0)
         {
             timer?.invalidate()
             segueToAnotherScreen()
         }
-        
     }
     
     func segueToAnotherScreen(){

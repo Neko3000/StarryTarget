@@ -19,6 +19,8 @@ class AssignmentCreateViewController: UIViewController {
     
     @IBOutlet weak var EndPeriodLabel: UILabel!
     @IBOutlet weak var EndTimeLabel: UILabel!
+
+    @IBOutlet weak var TimeHourLabel: UILabel!
     
     @IBOutlet weak var NameLabel: UITextField!
     @IBOutlet weak var ShortDescriptionLabel: UITextField!
@@ -108,6 +110,13 @@ class AssignmentCreateViewController: UIViewController {
             
             return dateFormatter.string(from:Date().addingTimeInterval(TimeInterval(self.timeSecond.value)))
         }).bind(to: EndTimeLabel.rx.text).disposed(by: self.disposeBag)
+        
+        timeSecond.asObservable().map({t -> String in
+            let hour:Double = Double(t)/3600.0
+            let hourStr:String = String(format: "%.2f",hour)
+            
+            return "= \(hourStr) hours"
+        }).bind(to:TimeHourLabel.rx.text).disposed(by: self.disposeBag)
         
         //set timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCurrentTime), userInfo: nil, repeats: true)

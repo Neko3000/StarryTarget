@@ -270,6 +270,7 @@
                         <outlet property="ShortDescriptionLabel" destination="cPE-6R-ovq" id="7g3-4m-N0l"/>
                         <outlet property="StartPeriodLabel" destination="WJP-lW-ybT" id="uoK-vc-ztG"/>
                         <outlet property="StartTimeLabel" destination="aPb-Pc-evA" id="vmQ-Jt-BmK"/>
+                        <outlet property="TimeHourLabel" destination="x2t-La-dTB" id="EMS-la-Fgf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHH-gz-1sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -393,6 +394,8 @@
                     </view>
                     <connections>
                         <outlet property="AnimationImageView" destination="PZB-UX-AYF" id="LKo-40-nsT"/>
+                        <outlet property="CurrentTimeLabel" destination="hYu-dZ-ntm" id="2DW-Lh-2YK"/>
+                        <outlet property="CurrentTimePeriodLabel" destination="tcj-bB-GK7" id="8Nx-Ba-JAG"/>
                         <outlet property="HourLabel" destination="j1J-0a-UgL" id="VgP-V9-oRQ"/>
                         <outlet property="MinuteLabel" destination="6xT-Z4-2Wp" id="VW3-gx-Vlw"/>
                         <outlet property="SecondLabel" destination="gZF-qA-xHA" id="DNX-n0-gDz"/>
@@ -497,6 +500,7 @@
         <image name="clock" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KRl-c3-UgC"/>
+        <segue reference="bVr-Id-6Pa"/>
+        <segue reference="Vzh-bb-que"/>
     </inferredMetricsTieBreakers>
 </document>

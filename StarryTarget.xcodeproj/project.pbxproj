@@ -123,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				EB26C6DE2010524E006AAEA1 /* MainViewController.swift */,
-				EBAC8EF1202BCE4500C94FC6 /* SegueBehaviorObject.swift */,
 				EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */,
 				EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */,
 				EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */,
@@ -137,6 +136,7 @@
 				EB7F068B200C8F3A0035A274 /* Assets.xcassets */,
 				EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */,
 				EB7F0690200C8F3A0035A274 /* Info.plist */,
+				EBAC8EF1202BCE4500C94FC6 /* SegueBehaviorObject.swift */,
 				EB706C8D201972F000BFB9DE /* TimePickerView.swift */,
 				EB26C6D0201026ED006AAEA1 /* AssignmentListTableView.swift */,
 				EB11D9C12025F2B40073213F /* RealmManager.swift */,
