@@ -23,7 +23,7 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
     //main-data
     private lazy var assignmentRecords:Results<AssignmentRecord> = {
         let realm = try! Realm()
-        return realm.objects(AssignmentRecord.self)
+        return realm.objects(AssignmentRecord.self).sorted(byKeyPath: "startTime", ascending: false)
     }()
     
     override func layoutSubviews() {

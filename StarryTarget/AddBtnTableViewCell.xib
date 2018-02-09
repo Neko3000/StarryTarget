@@ -31,12 +31,13 @@
                         </connections>
                     </button>
                 </subviews>
-                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="URC-Ru-fPL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IpN-mg-cCt"/>
                     <constraint firstItem="URC-Ru-fPL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iaY-mO-4Rp"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="52" y="78.5"/>
         </tableViewCell>

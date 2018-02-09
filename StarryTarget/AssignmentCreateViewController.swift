@@ -13,6 +13,7 @@ import RxCocoa
 class AssignmentCreateViewController: UIViewController {
     
     @IBOutlet weak var MainTimePickerView: TimePickerView!
+    @IBOutlet weak var MainTimePickerViewBottom: NSLayoutConstraint!
     
     @IBOutlet weak var StartPeriodLabel: UILabel!
     @IBOutlet weak var StartTimeLabel: UILabel!

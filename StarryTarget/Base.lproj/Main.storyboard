@@ -266,6 +266,7 @@
                         <outlet property="EndPeriodLabel" destination="xde-1X-Yru" id="7Xx-MW-ngp"/>
                         <outlet property="EndTimeLabel" destination="eMR-Ry-UKV" id="28n-1o-5rW"/>
                         <outlet property="MainTimePickerView" destination="Aza-S9-eca" id="lYf-cs-2zb"/>
+                        <outlet property="MainTimePickerViewBottom" destination="4w7-ha-EDY" id="gFe-Vj-fOe"/>
                         <outlet property="NameLabel" destination="eFQ-sf-nBK" id="tNC-hn-fI3"/>
                         <outlet property="ShortDescriptionLabel" destination="cPE-6R-ovq" id="7g3-4m-N0l"/>
                         <outlet property="StartPeriodLabel" destination="WJP-lW-ybT" id="uoK-vc-ztG"/>
@@ -335,7 +336,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.28159928319999999" green="0.76211327309999999" blue="0.93518948550000003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.5" id="CDW-4n-CBN"/>
                                     <constraint firstAttribute="bottom" secondItem="uVx-ef-O3g" secondAttribute="bottom" constant="3" id="DzC-0D-7z9"/>
@@ -500,7 +501,6 @@
         <image name="clock" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bVr-Id-6Pa"/>
         <segue reference="Vzh-bb-que"/>
     </inferredMetricsTieBreakers>
 </document>
