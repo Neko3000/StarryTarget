@@ -206,7 +206,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-S9-eca" customClass="TimePickerView" customModule="StarryTarget" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="437" width="375" height="230"/>
+                                <rect key="frame" x="0.0" y="667" width="375" height="230"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oib-5E-BW7">
                                         <rect key="frame" x="0.0" y="44" width="375" height="186"/>
@@ -242,13 +242,14 @@
                                     <constraint firstItem="bII-3A-F8i" firstAttribute="top" secondItem="Aza-S9-eca" secondAttribute="top" id="lKG-Vo-5YR"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="MainTimePickerViewBottom" destination="4w7-ha-EDY" id="3us-Bq-bnl"/>
                                     <outlet property="PickerView" destination="Oib-5E-BW7" id="qU9-QZ-Fcp"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8fO-V3-xqr" firstAttribute="bottom" secondItem="Aza-S9-eca" secondAttribute="bottom" id="4w7-ha-EDY"/>
+                            <constraint firstItem="8fO-V3-xqr" firstAttribute="bottom" secondItem="Aza-S9-eca" secondAttribute="bottom" constant="-230" id="4w7-ha-EDY"/>
                             <constraint firstItem="vct-Cm-GbU" firstAttribute="top" secondItem="Og7-sD-yiq" secondAttribute="top" id="BVa-q7-YbA"/>
                             <constraint firstItem="vct-Cm-GbU" firstAttribute="bottom" secondItem="8fO-V3-xqr" secondAttribute="bottom" id="JSa-Ef-Ges"/>
                             <constraint firstItem="zZk-Vi-tB5" firstAttribute="top" secondItem="Og7-sD-yiq" secondAttribute="top" constant="70" id="ODG-Pp-kdn"/>
@@ -501,6 +502,7 @@
         <image name="clock" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bVr-Id-6Pa"/>
         <segue reference="Vzh-bb-que"/>
     </inferredMetricsTieBreakers>
 </document>

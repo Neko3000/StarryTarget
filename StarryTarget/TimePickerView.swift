@@ -30,6 +30,7 @@ struct Time {
 class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
 
     @IBOutlet weak var PickerView:UIPickerView!
+    @IBOutlet weak var MainTimePickerViewBottom: NSLayoutConstraint!
     
     public var time:Variable<Time> = Variable<Time>(Time())
     private var perviousTime:Time?
@@ -72,7 +73,11 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
     }
     
     @IBAction func CancelBtnTapped(_ sender:Any){
-        self.isHidden = true
+        
+        MainTimePickerViewBottom.constant = -self.frame.height
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.superview?.layoutIfNeeded()
+        }, completion: nil)
     }
     
     @IBAction func DoneBtnTapped(_ sender:Any)
@@ -82,6 +87,8 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
         time.value.second = PickerView.selectedRow(inComponent: 2)
         
         self.isHidden = true
+        
+        
     }
     
     
