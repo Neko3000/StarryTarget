@@ -86,9 +86,10 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
         time.value.minute = PickerView.selectedRow(inComponent: 1)
         time.value.second = PickerView.selectedRow(inComponent: 2)
         
-        self.isHidden = true
-        
-        
+        MainTimePickerViewBottom.constant = -self.frame.height
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.superview?.layoutIfNeeded()
+        }, completion: nil)
     }
     
     

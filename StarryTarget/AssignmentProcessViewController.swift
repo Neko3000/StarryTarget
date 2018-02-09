@@ -81,7 +81,7 @@ class AssignmentProcessViewController: UIViewController {
         //observer UILabs
         currentTime.asObservable().map({t -> String in
             let dateFormatterForPeriod = DateFormatter()
-            dateFormatterForPeriod.dateFormat = "a"
+            dateFormatterForPeriod.dateFormat = "a."
             
             return dateFormatterForPeriod.string(from: t)
         }).bind(to:CurrentTimePeriodLabel.rx.text).disposed(by: self.disposeBag)
@@ -148,6 +148,10 @@ class AssignmentProcessViewController: UIViewController {
         AnimationImageView.image = animation
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.AnimationImageView.alpha = 1
+        })
     }
     
     private func createRecord(withName name:String,withShortDescription shortDescription:String,startAt startTime:Date,withTimeSecond timeSecond:Int,result isAchieved:Bool)

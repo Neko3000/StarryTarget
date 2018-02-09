@@ -51,6 +51,10 @@ class AssignmentAchieveViewController: UIViewController {
         AnimationImageView.image = animation
         AnimationImageView.contentMode = .scaleAspectFill
         AnimationImageView.startAnimating()
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.AnimationImageView.alpha = 1
+        })
     }
     
     func loadQuote()
@@ -59,8 +63,8 @@ class AssignmentAchieveViewController: UIViewController {
         let quotes = realm.objects(Quote.self)
         let randomIndex = Int(random: Range<Int>(0..<quotes.count))
         
-        QuoteContentLabel.text = quotes[randomIndex].content
-        QuoteAuthorLabel.text = quotes[randomIndex].author
+        QuoteContentLabel.text = "\"\(quotes[randomIndex].content)\""
+        QuoteAuthorLabel.text = "- \(quotes[randomIndex].author)"
     }
 
     override func didReceiveMemoryWarning() {

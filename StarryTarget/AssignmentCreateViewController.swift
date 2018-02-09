@@ -130,6 +130,7 @@ class AssignmentCreateViewController: UIViewController {
     @objc func showDatePicker(sender:UITapGestureRecognizer)
     {
         MainTimePickerViewBottom.constant = 0
+        
         UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)

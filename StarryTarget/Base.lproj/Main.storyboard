@@ -290,7 +290,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-Background" translatesAutoresizingMaskIntoConstraints="NO" id="Bd9-07-wf1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-UX-AYF">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-UX-AYF">
                                 <rect key="frame" x="0.0" y="20" width="375" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Bkg-rt-WM3"/>
@@ -369,7 +369,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcj-bB-GK7">
-                                <rect key="frame" x="83.5" y="505" width="43.5" height="28"/>
+                                <rect key="frame" x="79" y="505" width="43.5" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -384,7 +384,7 @@
                             <constraint firstItem="Bd9-07-wf1" firstAttribute="leading" secondItem="Jxb-WM-tAN" secondAttribute="leading" id="MXM-tE-bdv"/>
                             <constraint firstItem="hYu-dZ-ntm" firstAttribute="top" secondItem="hO3-u3-KA2" secondAttribute="bottom" constant="20" id="OOq-TF-SlG"/>
                             <constraint firstItem="Bd9-07-wf1" firstAttribute="trailing" secondItem="Jxb-WM-tAN" secondAttribute="trailing" id="PXK-AD-yMN"/>
-                            <constraint firstItem="hYu-dZ-ntm" firstAttribute="leading" secondItem="tcj-bB-GK7" secondAttribute="trailing" constant="0.5" id="R1v-9F-oTJ"/>
+                            <constraint firstItem="hYu-dZ-ntm" firstAttribute="leading" secondItem="tcj-bB-GK7" secondAttribute="trailing" constant="5" id="R1v-9F-oTJ"/>
                             <constraint firstItem="Jxb-WM-tAN" firstAttribute="bottom" secondItem="O2s-hi-BCL" secondAttribute="bottom" constant="51" id="RVO-y3-dag"/>
                             <constraint firstItem="hO3-u3-KA2" firstAttribute="top" secondItem="PZB-UX-AYF" secondAttribute="bottom" constant="9" id="cVF-HN-MoA"/>
                             <constraint firstItem="PZB-UX-AYF" firstAttribute="top" secondItem="Jxb-WM-tAN" secondAttribute="top" id="gWY-C7-FlR"/>
@@ -419,7 +419,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-Background" translatesAutoresizingMaskIntoConstraints="NO" id="a4Z-9d-vgl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iMi-ae-g2v">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iMi-ae-g2v">
                                 <rect key="frame" x="0.0" y="20" width="375" height="266"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="266" id="D0r-9y-1Xk"/>
