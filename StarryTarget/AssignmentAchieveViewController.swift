@@ -65,16 +65,8 @@ class AssignmentAchieveViewController: UIViewController {
         let quotes = realm.objects(Quote.self)
         let randomIndex = Int(random: Range<Int>(0..<quotes.count))
         
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        QuoteContentLabel.text = quotes[randomIndex].content
-        QuoteAuthorLabel.text = quotes[randomIndex].author
-=======
-=======
->>>>>>> Stashed changes
         QuoteContentLabel.text = " \"\(quotes[randomIndex].content)\" "
         QuoteAuthorLabel.text = "- \(quotes[randomIndex].author)"
->>>>>>> Stashed changes
     }
 
     override func didReceiveMemoryWarning() {
