@@ -107,6 +107,13 @@ class AssignmentProcessViewController: UIViewController {
     }
 
     @objc func updateTime(){
+        
+        if(timeSecondCounter! <= 0)
+        {
+            timer?.invalidate()
+            segueToAnotherScreen()
+        }
+        
         let hour:Int = timeSecondCounter! / 3600
         let minute:Int = (timeSecondCounter! % 3600)/60
         let second:Int = timeSecondCounter! % 60
@@ -118,12 +125,6 @@ class AssignmentProcessViewController: UIViewController {
         timeSecondCounter = timeSecondCounter! - 1
         
         currentTime.value = Date()
-        
-        if(timeSecondCounter! <= 0)
-        {
-            timer?.invalidate()
-            segueToAnotherScreen()
-        }
     }
     
     func segueToAnotherScreen(){

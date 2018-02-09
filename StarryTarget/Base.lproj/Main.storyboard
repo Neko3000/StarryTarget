@@ -263,8 +263,10 @@
                         <viewLayoutGuide key="safeArea" id="8fO-V3-xqr"/>
                     </view>
                     <connections>
+                        <outlet property="CornerRadiusCardView" destination="zZk-Vi-tB5" id="xM7-jZ-wIH"/>
                         <outlet property="EndPeriodLabel" destination="xde-1X-Yru" id="7Xx-MW-ngp"/>
                         <outlet property="EndTimeLabel" destination="eMR-Ry-UKV" id="28n-1o-5rW"/>
+                        <outlet property="FocusBtn" destination="hXn-Pz-xC9" id="kil-hc-JC3"/>
                         <outlet property="MainTimePickerView" destination="Aza-S9-eca" id="lYf-cs-2zb"/>
                         <outlet property="MainTimePickerViewBottom" destination="4w7-ha-EDY" id="gFe-Vj-fOe"/>
                         <outlet property="NameLabel" destination="eFQ-sf-nBK" id="tNC-hn-fI3"/>
@@ -488,6 +490,7 @@
                         <outlet property="AnimationImageView" destination="iMi-ae-g2v" id="2j7-KZ-Djk"/>
                         <outlet property="QuoteAuthorLabel" destination="oa3-0z-0AL" id="Wpw-tk-YjT"/>
                         <outlet property="QuoteContentLabel" destination="BDT-Y1-pob" id="tuu-ZP-Ly0"/>
+                        <outlet property="ReturnBtn" destination="Pe0-Qw-zQO" id="fku-an-36F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KP5-iH-oeL" userLabel="First Responder" sceneMemberID="firstResponder"/>

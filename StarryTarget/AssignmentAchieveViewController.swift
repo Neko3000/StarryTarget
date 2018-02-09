@@ -17,6 +17,8 @@ class AssignmentAchieveViewController: UIViewController {
     @IBOutlet weak var QuoteContentLabel: UILabel!
     @IBOutlet weak var QuoteAuthorLabel: UILabel!
     
+    @IBOutlet weak var ReturnBtn: UIButton!
+    
     //thread
     private var loadAnimationThread:Thread?
     
@@ -27,6 +29,10 @@ class AssignmentAchieveViewController: UIViewController {
         
         //load quotes
         loadQuote()
+        
+        //set corner radius
+        ReturnBtn.layer.cornerRadius = 8
+        ReturnBtn.layer.masksToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,8 +65,16 @@ class AssignmentAchieveViewController: UIViewController {
         let quotes = realm.objects(Quote.self)
         let randomIndex = Int(random: Range<Int>(0..<quotes.count))
         
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         QuoteContentLabel.text = quotes[randomIndex].content
         QuoteAuthorLabel.text = quotes[randomIndex].author
+=======
+=======
+>>>>>>> Stashed changes
+        QuoteContentLabel.text = " \"\(quotes[randomIndex].content)\" "
+        QuoteAuthorLabel.text = "- \(quotes[randomIndex].author)"
+>>>>>>> Stashed changes
     }
 
     override func didReceiveMemoryWarning() {

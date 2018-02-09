@@ -21,6 +21,8 @@ class AssignmentCreateViewController: UIViewController {
     @IBOutlet weak var EndPeriodLabel: UILabel!
     @IBOutlet weak var EndTimeLabel: UILabel!
 
+    @IBOutlet weak var CornerRadiusCardView: UIView!
+    @IBOutlet weak var FocusBtn: UIButton!
     @IBOutlet weak var TimeHourLabel: UILabel!
     
     @IBOutlet weak var NameLabel: UITextField!
@@ -48,6 +50,16 @@ class AssignmentCreateViewController: UIViewController {
         }
         set(value){
             _shortDescription = value
+        }
+    }
+    private var _timeSecondForInit:Int?
+    public var timeSecondForInit:Int?
+    {
+        get{
+            return _timeSecondForInit
+        }
+        set(value){
+            _timeSecondForInit = value
         }
     }
     
@@ -125,6 +137,13 @@ class AssignmentCreateViewController: UIViewController {
         //load assignment if it existes
         NameLabel.text = _name
         ShortDescriptionLabel.text = _shortDescription
+        timeSecond.value = _timeSecondForInit ?? 0
+        
+        //set corner radius
+        CornerRadiusCardView.layer.cornerRadius = 8
+        CornerRadiusCardView.layer.masksToBounds = true
+        FocusBtn.layer.cornerRadius = 8
+        FocusBtn.layer.masksToBounds = true
     }
     
     @objc func showDatePicker(sender:UITapGestureRecognizer)

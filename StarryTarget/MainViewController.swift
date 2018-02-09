@@ -45,6 +45,7 @@ class MainViewController: UIViewController,SegueBehaviorObject{
             let assignmentRecord = sender as! AssignmentRecord
             destViewController.name = assignmentRecord.name
             destViewController.shortDescription = assignmentRecord.shortDescription
+            destViewController.timeSecondForInit = assignmentRecord.timeSecond
         default:
             break
         }
