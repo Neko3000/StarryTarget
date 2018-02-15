@@ -15,7 +15,6 @@
 		EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */; };
 		EB5C429620299A58000157C5 /* RandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C429520299A58000157C5 /* RandomInt.swift */; };
 		EB706C8E201972F000BFB9DE /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB706C8D201972F000BFB9DE /* TimePickerView.swift */; };
-		EB7E6FFE201F1CA400338614 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7E6FFD201F1CA400338614 /* DateTime.swift */; };
 		EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F0684200C8F3A0035A274 /* AppDelegate.swift */; };
 		EB7F068A200C8F3A0035A274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F0688200C8F3A0035A274 /* Main.storyboard */; };
 		EB7F068C200C8F3A0035A274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7F068B200C8F3A0035A274 /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 		EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentProcessViewController.swift; sourceTree = "<group>"; };
 		EB5C429520299A58000157C5 /* RandomInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInt.swift; sourceTree = "<group>"; };
 		EB706C8D201972F000BFB9DE /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
-		EB7E6FFD201F1CA400338614 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		EB7F0681200C8F390035A274 /* StarryTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarryTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7F0684200C8F3A0035A274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB7F0689200C8F3A0035A274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,14 +95,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB26C6CD201025FF006AAEA1 /* ViewModels */ = {
+		EB26C6CD201025FF006AAEA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */,
 				EBF8129020350D5C0008E7D3 /* AssignmentAchieveViewModel.swift */,
 				EBF8128E203504280008E7D3 /* ViewModelProtocol.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EB7F0678200C8F390035A274 = {
@@ -128,31 +126,78 @@
 		EB7F0683200C8F390035A274 /* StarryTarget */ = {
 			isa = PBXGroup;
 			children = (
-				EB26C6DE2010524E006AAEA1 /* MainViewController.swift */,
-				EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */,
-				EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */,
-				EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */,
-				EB26C6CD201025FF006AAEA1 /* ViewModels */,
+				EBBC55E520352C9D0077FF6B /* Data */,
+				EBBC55E320352BB20077FF6B /* Controller */,
+				EBBC55E220352BAC0077FF6B /* Model */,
+				EBBC55E120352B9D0077FF6B /* View */,
+				EB26C6CD201025FF006AAEA1 /* ViewModel */,
+				EBBC55E420352C8E0077FF6B /* Extension */,
+				EBBC55E620352CB70077FF6B /* Library */,
+				EBCA13452015B9FA007A91DE /* Resource */,
 				EB7F0684200C8F3A0035A274 /* AppDelegate.swift */,
+				EB7F068B200C8F3A0035A274 /* Assets.xcassets */,
+				EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */,
+				EB7F0690200C8F3A0035A274 /* Info.plist */,
+			);
+			path = StarryTarget;
+			sourceTree = "<group>";
+		};
+		EBBC55E120352B9D0077FF6B /* View */ = {
+			isa = PBXGroup;
+			children = (
 				EB7F0688200C8F3A0035A274 /* Main.storyboard */,
+				EB26C6D0201026ED006AAEA1 /* AssignmentListTableView.swift */,
+				EB706C8D201972F000BFB9DE /* TimePickerView.swift */,
 				EBCA134A2015CD5C007A91DE /* AddBtnTableViewCell.swift */,
 				EBCA134B2015CD5C007A91DE /* AddBtnTableViewCell.xib */,
 				EBCA28A3200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift */,
 				EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */,
-				EB7F068B200C8F3A0035A274 /* Assets.xcassets */,
-				EB7F068D200C8F3A0035A274 /* LaunchScreen.storyboard */,
-				EB7F0690200C8F3A0035A274 /* Info.plist */,
-				EBAC8EF1202BCE4500C94FC6 /* SegueBehaviorObject.swift */,
-				EB706C8D201972F000BFB9DE /* TimePickerView.swift */,
-				EB26C6D0201026ED006AAEA1 /* AssignmentListTableView.swift */,
-				EB11D9C12025F2B40073213F /* RealmManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBBC55E220352BAC0077FF6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				EBE9328E2025EA0C00BFE50A /* Quote.swift */,
 				EBF7A086202802D800165286 /* AssignmentRecord.swift */,
-				EB5C429520299A58000157C5 /* RandomInt.swift */,
-				EB7E6FFD201F1CA400338614 /* DateTime.swift */,
-				EBCA13452015B9FA007A91DE /* Resource */,
 			);
-			path = StarryTarget;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBBC55E320352BB20077FF6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB26C6DE2010524E006AAEA1 /* MainViewController.swift */,
+				EB94D9B82014794000B5648C /* AssignmentCreateViewController.swift */,
+				EB4A6FCA2014D119001C7DB3 /* AssignmentProcessViewController.swift */,
+				EBCA13462015BFDB007A91DE /* AssignmentAchieveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBBC55E420352C8E0077FF6B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C429520299A58000157C5 /* RandomInt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBBC55E520352C9D0077FF6B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EB11D9C12025F2B40073213F /* RealmManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EBBC55E620352CB70077FF6B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC8EF1202BCE4500C94FC6 /* SegueBehaviorObject.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		EBCA13452015B9FA007A91DE /* Resource */ = {
@@ -320,7 +365,6 @@
 				EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */,
 				EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */,
 				EBF8128F203504280008E7D3 /* ViewModelProtocol.swift in Sources */,
-				EB7E6FFE201F1CA400338614 /* DateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
