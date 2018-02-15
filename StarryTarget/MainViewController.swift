@@ -12,10 +12,16 @@ class MainViewController: UIViewController,SegueBehaviorObject{
 
     @IBOutlet weak var MainTableView: AssignmentListTableView!
     
+    //viewModel
+    private var mainViewControllerViewModel:MainViewControllerViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //instantiate ViewModel
+        mainViewControllerViewModel = MainViewControllerViewModel()
+        MainTableView.assignmentRecords = mainViewControllerViewModel?.assignmentRecordList
     }
     
     override func viewDidAppear(_ animated: Bool) {

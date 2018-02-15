@@ -31,6 +31,8 @@
 		EBCA28A6200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */; };
 		EBE9328F2025EA0C00BFE50A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9328E2025EA0C00BFE50A /* Quote.swift */; };
 		EBF7A087202802D800165286 /* AssignmentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7A086202802D800165286 /* AssignmentRecord.swift */; };
+		EBF8128F203504280008E7D3 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8128E203504280008E7D3 /* ViewModelProtocol.swift */; };
+		EBF8129120350D5C0008E7D3 /* AssignmentAchieveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8129020350D5C0008E7D3 /* AssignmentAchieveViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		EBCA28A4200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleAssignmentTableViewCell.xib; sourceTree = "<group>"; };
 		EBE9328E2025EA0C00BFE50A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		EBF7A086202802D800165286 /* AssignmentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentRecord.swift; sourceTree = "<group>"; };
+		EBF8128E203504280008E7D3 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		EBF8129020350D5C0008E7D3 /* AssignmentAchieveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAchieveViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				EB26C6CE20102619006AAEA1 /* MainViewControllerViewModel.swift */,
+				EBF8129020350D5C0008E7D3 /* AssignmentAchieveViewModel.swift */,
+				EBF8128E203504280008E7D3 /* ViewModelProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				EBE9328F2025EA0C00BFE50A /* Quote.swift in Sources */,
 				EB4A6FCB2014D119001C7DB3 /* AssignmentProcessViewController.swift in Sources */,
 				EB706C8E201972F000BFB9DE /* TimePickerView.swift in Sources */,
+				EBF8129120350D5C0008E7D3 /* AssignmentAchieveViewModel.swift in Sources */,
 				EB26C6CF20102619006AAEA1 /* MainViewControllerViewModel.swift in Sources */,
 				EB26C6DF2010524E006AAEA1 /* MainViewController.swift in Sources */,
 				EBCA28A5200C9E6B00EDEE3A /* SingleAssignmentTableViewCell.swift in Sources */,
@@ -312,6 +319,7 @@
 				EBCA13472015BFDB007A91DE /* AssignmentAchieveViewController.swift in Sources */,
 				EB7F0685200C8F3A0035A274 /* AppDelegate.swift in Sources */,
 				EB94D9B92014794100B5648C /* AssignmentCreateViewController.swift in Sources */,
+				EBF8128F203504280008E7D3 /* ViewModelProtocol.swift in Sources */,
 				EB7E6FFE201F1CA400338614 /* DateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

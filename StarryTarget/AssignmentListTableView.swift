@@ -20,11 +20,16 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
     //reference of the AddBtnTableViewCell
     public var AddBtnTableViewCell:AddBtnTableViewCell?
 
-    //main-data
-    private lazy var assignmentRecords:Results<AssignmentRecord> = {
-        let realm = try! Realm()
-        return realm.objects(AssignmentRecord.self).sorted(byKeyPath: "startTime", ascending: false)
-    }()
+    //main-data from MainViewController's ViewModel
+    private var _assignmentRecords:Results<AssignmentRecord>?
+    public var assignmentRecords:Results<AssignmentRecord>?{
+        get{
+            return _assignmentRecords
+        }
+        set(value){
+            _assignmentRecords = value
+        }
+    }
     
     override func layoutSubviews() {
         
@@ -65,7 +70,7 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "HH:mm.a"
 
-            let assignmentRecord = assignmentRecords[indexPath.section - 1]
+            let assignmentRecord = assignmentRecords![indexPath.section - 1]
             
             specificCell.NameLabel.text = assignmentRecord.name
             specificCell.TimeLabel.text = dateFormatter.string(from: assignmentRecord.startTime) + " - " + dateFormatter.string(from: assignmentRecord.startTime.addingTimeInterval(Double(assignmentRecord.timeSecond)))
@@ -84,7 +89,7 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return assignmentRecords.count + 1;
+        return assignmentRecords!.count + 1;
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -101,12 +106,12 @@ class AssignmentListTableView:UITableView,UITableViewDelegate,UITableViewDataSou
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let assignmentRecord = AssignmentRecord(id: assignmentRecords[indexPath.section - 1].id,
-                                                name: assignmentRecords[indexPath.section - 1].name,
-                                                shortDescription: assignmentRecords[indexPath.section - 1].shortDescription,
-                                                startTime: assignmentRecords[indexPath.section - 1].startTime,
-                                                timeSecond: assignmentRecords[indexPath.section - 1].timeSecond,
-                                                isAchieved: assignmentRecords[indexPath.section - 1].isAchieved)
+        let assignmentRecord = AssignmentRecord(id: assignmentRecords![indexPath.section - 1].id,
+                                                name: assignmentRecords![indexPath.section - 1].name,
+                                                shortDescription: assignmentRecords![indexPath.section - 1].shortDescription,
+                                                startTime: assignmentRecords![indexPath.section - 1].startTime,
+                                                timeSecond: assignmentRecords![indexPath.section - 1].timeSecond,
+                                                isAchieved: assignmentRecords![indexPath.section - 1].isAchieved)
    
         if(indexPath.section > 0)
         {

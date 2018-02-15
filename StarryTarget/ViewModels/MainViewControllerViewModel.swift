@@ -7,10 +7,43 @@
 //
 
 import Foundation
+import RealmSwift
 
-class MainViewControllerViewModel
+class MainViewControllerViewModel:ViewModel
 {
-    public init() {
+    init() {
         
+        _realm = try! Realm()
+        
+        assignmentRecordList = _realm!.objects(AssignmentRecord.self).sorted(byKeyPath: "startTime", ascending: false)
     }
+    
+    init(withRealm realm:Realm) {
+        
+        self._realm = realm
+        
+        assignmentRecordList = _realm!.objects(AssignmentRecord.self).sorted(byKeyPath: "startTime", ascending: false)
+    }
+    
+    //public properties
+    private var _realm:Realm?
+    public var realm:Realm?{
+        get{
+            return _realm
+        }
+        set(value){
+            _realm = value
+        }
+    }
+    
+    private var _assignmentRecordList:Results<AssignmentRecord>?
+    public var  assignmentRecordList:Results<AssignmentRecord>?{
+        get{
+            return _assignmentRecordList
+        }
+        set(value){
+            _assignmentRecordList = value
+        }
+    }
+    
 }

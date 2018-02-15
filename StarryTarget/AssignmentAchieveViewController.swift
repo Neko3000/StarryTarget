@@ -22,17 +22,22 @@ class AssignmentAchieveViewController: UIViewController {
     //thread
     private var loadAnimationThread:Thread?
     
+    //viewModel
+    private var assignmentAchieveControllerViewModel:AssignmentAchieveViewControllerViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        //load quotes
-        loadQuote()
-        
         //set corner radius
         ReturnBtn.layer.cornerRadius = 8
         ReturnBtn.layer.masksToBounds = true
+        
+        //instantiate ViewModel
+        assignmentAchieveControllerViewModel = AssignmentAchieveViewControllerViewModel()
+        QuoteContentLabel.text = " \"\(assignmentAchieveControllerViewModel!.quote!.content)\" "
+        QuoteAuthorLabel.text = "- \(assignmentAchieveControllerViewModel!.quote!.author)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
