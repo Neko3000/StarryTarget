@@ -10,11 +10,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarryTarget/AssignmentCreateViewController.swift"
+<<<<<<< HEAD
             timestampString = "540347557.884843"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "164"
             endingLineNumber = "164"
+=======
+            timestampString = "539883443.400633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+>>>>>>> animated
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +34,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarryTarget/AssignmentProcessViewController.swift"
+<<<<<<< HEAD
             timestampString = "540348456.2744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "168"
             endingLineNumber = "168"
+=======
+            timestampString = "539883443.4006881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+>>>>>>> animated
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarryTarget/AssignmentListTableView.swift"
+<<<<<<< HEAD
             timestampString = "540348456.274453"
+=======
+            timestampString = "539860943.520484"
+>>>>>>> animated
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
@@ -58,7 +78,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarryTarget/AssignmentListTableView.swift"
+<<<<<<< HEAD
             timestampString = "540348456.274492"
+=======
+            timestampString = "539860943.5205491"
+>>>>>>> animated
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
