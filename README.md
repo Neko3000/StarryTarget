@@ -50,7 +50,9 @@ Done!
 
 
 ## Dependencies
-Realm(https://realm.io) and RxSwift(https://github.com/ReactiveX/RxSwift/) were used in this project,
+Realm(https://realm.io) and RxSwift(https://github.com/ReactiveX/RxSwift/) </br>
+were used in this project,
+
 Pods have been included:
 
 ```
@@ -60,7 +62,7 @@ pod 'RealmSwift'<br/>
 ```
 
 ## Contracts
-E-mail: sheran_chen@outlook.com
+E-mail: sheran_chen@outlook.com </br>
 Weibo: @妖绀
 
 ## License
