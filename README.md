@@ -24,7 +24,7 @@ Done!
 <img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr1.gif" alt="screen-record-1">
 </p>
 <p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr2.gif" alt="screen-record-2">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr3.gif" alt="screen-record-2">
 </p>
 
 <p align="center"> 
