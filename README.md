@@ -50,8 +50,7 @@ Done!
 
 
 ## Dependencies
-Realm(https://realm.io) and RxSwift(https://github.com/ReactiveX/RxSwift/) </br>
-were used in this project,
+[Realm](https://realm.io) and [RxSwift](https://github.com/ReactiveX/RxSwift/) were used in this project,
 
 Pods have been included:
 
@@ -59,6 +58,15 @@ Pods have been included:
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RealmSwift'
+```
+
+## Development
+You could use [Realm Studio](https://www.google.com) to manage the database.
+
+Here's the path:
+```
+// RealmManager.swift
+print(Realm.Configuration.defaultConfiguration.fileURL!)
 ```
 
 ## Contact To Me
