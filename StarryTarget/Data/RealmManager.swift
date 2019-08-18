@@ -30,6 +30,8 @@ class RealmManager: IRealmManager {
         if(quotations?.count == 0)
         {
             try! realm?.write {
+                
+                // Write your own quotes here
                 realm?.add(Quote(id:(realm?.objects(Quote.self).max(ofProperty: "id") as Int? ?? 0) + 1,content: "Realists do not fear the results of their study.", author: "Fyodor Dostoevsky"))
                 realm?.add(Quote(id:(realm?.objects(Quote.self).max(ofProperty: "id") as Int? ?? 0) + 1,content: "Three can keep a secret, if two of them are dead.", author: "Benjamin Franklin"))
                 realm?.add(Quote(id:(realm?.objects(Quote.self).max(ofProperty: "id") as Int? ?? 0) + 1,content: "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.", author: "Jimmy Dean"))
