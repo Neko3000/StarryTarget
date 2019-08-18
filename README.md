@@ -56,9 +56,9 @@ were used in this project,
 Pods have been included:
 
 ```
-pod 'RxSwift'<br/>
-pod 'RxCocoa'<br/>
-pod 'RealmSwift'<br/>
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RealmSwift'
 ```
 
 ## Contracts
