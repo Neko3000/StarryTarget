@@ -27,23 +27,11 @@
 #include <realm/util/features.h>
 #include <realm/metrics/metric_timer.hpp>
 
-#if REALM_METRICS
-
 namespace realm {
 
 class Query; // forward declare in namespace realm
 
 namespace metrics {
-
-template <typename T>
-std::string print_value(T value)
-{
-    std::stringstream ss;
-    ss << value;
-    return ss.str();
-}
-
-const std::string value_separator = ".";
 
 class QueryInfo {
 public:
@@ -63,6 +51,7 @@ public:
     ~QueryInfo() noexcept;
 
     std::string get_description() const;
+    std::string get_table_name() const;
     QueryType get_type() const;
     double get_query_time() const;
 
@@ -71,30 +60,12 @@ public:
 
 private:
     std::string m_description;
+    std::string m_table_name;
     QueryType m_type;
     std::shared_ptr<MetricTimerResult> m_query_time;
 };
 
 } // namespace metrics
 } // namespace realm
-
-#else
-
-namespace realm {
-namespace metrics {
-
-template <typename T>
-std::string print_value(T)
-{
-    return "";
-}
-
-const std::string value_separator = ".";
-
-} // end namespace metrics
-} // end namespace realm
-
-#endif // REALM_METRICS
-
 
 #endif // REALM_QUERY_INFO_HPP

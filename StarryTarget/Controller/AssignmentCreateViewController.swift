@@ -150,7 +150,7 @@ class AssignmentCreateViewController: UIViewController {
     {
         MainTimePickerViewBottom.constant = 0
         
-        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }

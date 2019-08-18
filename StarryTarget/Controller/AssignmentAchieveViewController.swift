@@ -72,7 +72,7 @@ class AssignmentAchieveViewController: UIViewController {
     {
         let realm = try! Realm()
         let quotes = realm.objects(Quote.self)
-        let randomIndex = Int(random: Range<Int>(0..<quotes.count))
+        let randomIndex = Int.random(in: 0 ..< quotes.count)
 
         QuoteContentLabel.text = "\"\(quotes[randomIndex].content)\""
 

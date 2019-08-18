@@ -6,7 +6,7 @@ target 'StarryTarget' do
   use_frameworks!
 
   # Pods for StarryTarget
-  pod 'RxSwift'
-  pod 'RxCocoa'    
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
   pod 'RealmSwift'
 end

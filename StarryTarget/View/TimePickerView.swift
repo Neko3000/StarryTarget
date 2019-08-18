@@ -75,7 +75,7 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
     @IBAction func CancelBtnTapped(_ sender:Any){
         
         MainTimePickerViewBottom.constant = -self.frame.height
-        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.superview?.layoutIfNeeded()
         }, completion: nil)
     }
@@ -87,7 +87,7 @@ class TimePickerView: UIView,UIPickerViewDelegate,UIPickerViewDataSource{
         time.value.second = PickerView.selectedRow(inComponent: 2)
         
         MainTimePickerViewBottom.constant = -self.frame.height
-        UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.superview?.layoutIfNeeded()
         }, completion: nil)
     }

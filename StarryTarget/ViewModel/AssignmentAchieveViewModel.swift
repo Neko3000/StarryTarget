@@ -15,7 +15,7 @@ class AssignmentAchieveViewControllerViewModel:ViewModel{
         let _realm = try! Realm()
         
         let quotes = _realm.objects(Quote.self)
-        let randomIndex = Int(random: Range<Int>(0..<quotes.count))
+        let randomIndex = Int.random(in: 0 ..< quotes.count)
         _quote = quotes[randomIndex]
     }
     
@@ -24,7 +24,7 @@ class AssignmentAchieveViewControllerViewModel:ViewModel{
         let _realm = realm
         
         let quotes = _realm.objects(Quote.self)
-        let randomIndex = Int(random: Range<Int>(0..<quotes.count))
+        let randomIndex = Int.random(in: 0 ..< quotes.count)
         _quote = quotes[randomIndex]
     }
     
