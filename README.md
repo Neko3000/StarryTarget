@@ -1,5 +1,5 @@
 # StarryTarget
-![License: MIT](https://img.shields.io/github/license/neko3000/starryTarget)
+![License: MIT](https://img.shields.io/github/license/Neko3000/StarryTarget)
 ![Platforms: iOS](https://img.shields.io/badge/Platform-iOS-lightgrey)
 ![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)
 ![Version: v0.90](https://img.shields.io/badge/version-v0.90-lightgrey)
