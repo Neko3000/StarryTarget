@@ -28,7 +28,7 @@ Done!
 </p>
 
 <p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s1.png" width="473" height="800" alt="MainViewController">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s1.png" width="484" height="800" alt="MainViewController">
 </p>
 <p align="center"> 
 <img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s2.png" width="484" height="800" alt="AssignmentProcessViewController">
