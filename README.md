@@ -4,9 +4,9 @@
 ![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)
 ![Version: v0.90](https://img.shields.io/badge/version-v0.90-lightgrey)
 
-</br>
 StarryTarget is a mobile application based on iOS.</br>
 It showed basic functions to make you concentrate on your target until you complete it.</br>
+</br>
 After you complete your assignment, a "Congratulation!" animation and a quote would been shown.
 
 ## Installation
@@ -21,23 +21,23 @@ Done!
 
 ## How to use
 <p align="center"> 
-<img src="https://farm1.staticflickr.com/884/41337473172_99392625fa_o.png" width="473" alt="screen-record-1">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr1.gif" alt="screen-record-1">
 </p>
 <p align="center"> 
-<img src="https://farm1.staticflickr.com/884/41337473172_99392625fa_o.png" width="473" alt="screen-record-2">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr2.gif" alt="screen-record-2">
 </p>
 
 <p align="center"> 
-<img src="https://farm1.staticflickr.com/884/41337473172_99392625fa_o.png" width="473" height="800" alt="MainViewController">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s1.png" width="473" height="800" alt="MainViewController">
 </p>
 <p align="center"> 
-<img src="https://farm1.staticflickr.com/808/41337473222_82ec902d15_o.png" width="484" height="800" alt="AssignmentProcessViewController">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s2.png" width="484" height="800" alt="AssignmentProcessViewController">
 </p>
 <p align="center"> 
-<img src="https://farm1.staticflickr.com/810/41380016131_dce3a5e08a_o.png" width="484" height="800" alt="AssignmentCreateViewController">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s3.png" width="484" height="800" alt="AssignmentCreateViewController">
 </p>
 <p align="center"> 
-<img src="https://farm1.staticflickr.com/902/41337473312_093ae643d7_o.png" width="484" height="800" alt="AssignmentAchieveViewController">
+<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s4.png" width="484" height="800" alt="AssignmentAchieveViewController">
 </p>
 
 ## Features
