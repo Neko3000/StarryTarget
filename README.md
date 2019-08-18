@@ -61,7 +61,7 @@ pod 'RealmSwift'
 ```
 
 ## Development
-You could use [Realm Studio](https://www.google.com) to manage the database.
+You could use [Realm Studio](https://realm.io/products/realm-studio/) to manage the database.
 
 Here's the path:
 ```
