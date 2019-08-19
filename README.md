@@ -21,24 +21,17 @@ Done!
 
 ## How to use
 <p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr1.gif" alt="screen-record-1">
-</p>
-<p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-sr2.gif" alt="screen-record-2">
+<img width="300" src="https://raw.githubusercontent.com/Neko3000/resource-storage/master/img/screenshot/starrytarget-sr1.gif" alt="screen-record-1">
+<img width="300" src="https://raw.githubusercontent.com/Neko3000/resource-storage/master/img/screenshot/starrytarget-sr2.gif" alt="screen-record-2">
 </p>
 
 <p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s1.png" width="484" height="800" alt="MainViewController">
+<img src="https://raw.githubusercontent.com/Neko3000/resource-storage/master/img/screenshot/starrytarget-s1.png" width="200" alt="">
+<img src="https://raw.githubusercontent.com/Neko3000/resource-storage/master/img/screenshot/starrytarget-s2.png" width="200" alt="">
+<img src="https://raw.githubusercontent.com/Neko3000/resource-storage/master/img/screenshot/starrytarget-s3.png" width="200" alt="">
+<img src="https://raw.githubusercontent.com/Neko3000/resource-storage/master/img/screenshot/starrytarget-s4.png" width="200" alt="">
 </p>
-<p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s2.png" width="484" height="800" alt="AssignmentProcessViewController">
-</p>
-<p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s3.png" width="484" height="800" alt="AssignmentCreateViewController">
-</p>
-<p align="center"> 
-<img src="http://pwfp54fmq.bkt.gdipper.com/starrytarget-s4.png" width="484" height="800" alt="AssignmentAchieveViewController">
-</p>
+
 
 ## Features
 - [x] Create Assignment
